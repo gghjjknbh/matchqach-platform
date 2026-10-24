@@ -1,0 +1,1854 @@
+<!doctype html><html><head><meta charset=utf8><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-dL+tSdmEPoBeQH4xbyoJLQaI6zfHLR41h0nCgnFhysQ='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data:; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests"><meta name="referrer" content="no-referrer"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>ما تشقاش Matchqach</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@500;600;700&display=swap">
+<style id="page-css">
+/* Layout: Professional Modern UI with soft background, refined blue gradient hero, clean cards and intuitive elements */
+:root{
+  --bg:#f8fafc;
+  --surface:#ffffff;
+  --tint:#f1f5f9;
+  --ink:#0f172a;
+  --muted:#64748b;
+  --line:#e2e8f0;
+  --accent:#2563eb;
+  --accent-ink:#ffffff;
+  --hero:linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  --hero-ink:#ffffff;
+  --hero-soft:rgba(255,255,255,.85);
+  --sun:#f59e0b;
+  --sun-ink:#2b1f00;
+  --open:#059669;
+  --open-solid:#059669;
+  --open-solid-ink:#ffffff;
+  --open-bg:#ecfdf5;
+  --closed:#dc2626;
+  --closed-bg:#fee2e2;
+  --soon:#d97706;
+  --soon-bg:#fef3c7;
+  --pause:#b45309;
+  --pause-bg:#fef3c7;
+  --shadow:0 4px 20px -2px rgba(15,23,42,0.05);
+  --f-display:'Reem Kufi','Segoe UI',Tahoma,sans-serif;
+  --f-body:'IBM Plex Sans Arabic','Segoe UI',Tahoma,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a1022;
+    --surface:#141c36;
+    --tint:#1b2547;
+    --ink:#eaf0ff;
+    --muted:#9ba8c9;
+    --line:#26325a;
+    --accent:#86a6ff;
+    --accent-ink:#0a1534;
+    --hero:linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    --open:#47e29a;
+    --open-solid:#3fdc94;
+    --open-solid-ink:#03241a;
+    --open-bg:#0f3b2c;
+    --closed:#ff8f7e;
+    --closed-bg:#43201f;--soon:#ffb066;--soon-bg:#4a2b0e;
+    --pause:#f4c968;
+    --pause-bg:#3b2d10;
+    --shadow:0 14px 28px -18px rgba(0,0,0,.7);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a1022;
+  --surface:#141c36;
+  --tint:#1b2547;
+  --ink:#eaf0ff;
+  --muted:#9ba8c9;
+  --line:#26325a;
+  --accent:#86a6ff;
+  --accent-ink:#0a1534;
+  --hero:linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  --open:#47e29a;
+  --open-solid:#3fdc94;
+  --open-solid-ink:#03241a;
+  --open-bg:#0f3b2c;
+  --closed:#ff8f7e;
+  --closed-bg:#43201f;--soon:#ffb066;--soon-bg:#4a2b0e;
+  --pause:#f4c968;
+  --pause-bg:#3b2d10;
+  --shadow:0 14px 28px -18px rgba(0,0,0,.7);
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--f-body);
+  font-size:15px;
+  line-height:1.6;
+  padding-block:16px 56px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+}
+h1,h2,p{margin:0}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+
+.wrap{max-width:940px;margin-inline:auto;display:flex;flex-direction:column;gap:18px}
+
+/* hero */
+.hero{
+  position:relative;overflow:hidden;isolation:isolate;
+  background:var(--hero);
+  color:var(--hero-ink);
+  border-radius:24px;
+  padding:20px 24px 24px;
+  display:flex;flex-direction:column;gap:14px;
+  box-shadow:0 10px 25px -5px rgba(37,99,235,0.15);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:-1;opacity:.12;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cdefs%3E%3Cmask id='m'%3E%3Crect width='120' height='120' fill='%23fff'/%3E%3Ccircle cx='70' cy='60' r='40' fill='%23000'/%3E%3C/mask%3E%3C/defs%3E%3Ccircle cx='60' cy='60' r='50' fill='%23fff' mask='url(%23m)'/%3E%3Cpolygon fill='%23fff' points='84,44 87.763,54.822 99.217,55.056 90.087,61.978 93.405,72.944 84,66.4 74.595,72.944 77.913,61.978 68.783,55.056 80.237,54.822'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:left -34px bottom -56px;
+  background-size:280px 280px;
+}
+.hero-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--f-display);font-weight:700;font-size:22px;line-height:1.2;flex-wrap:wrap}
+.brand .b-en{font-size:16px;letter-spacing:.08em;color:var(--sun)}
+.flag{display:block;width:38px;height:25px;border-radius:4px;box-shadow:0 0 0 1.5px rgba(255,255,255,.75);flex:none}
+.lamp{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--sun);box-shadow:0 0 0 4px rgba(245,158,11,.3),0 0 16px 3px rgba(245,158,11,.85);flex:none}
+.lang{display:flex;gap:6px}
+.lang button{min-height:38px;padding:4px 16px;border-radius:999px;border:1.5px solid rgba(255,255,255,.45);background:rgba(255,255,255,.14);color:#fff;cursor:pointer;font-weight:500;transition:all .2s ease}
+.lang button[aria-pressed="true"]{background:#fff;color:var(--accent);border-color:#fff;font-weight:700}
+.lang.on-light button{border-color:var(--line);background:var(--surface);color:var(--ink)}
+.lang.on-light button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.hero-bottom{display:flex;justify-content:flex-end;align-items:flex-end;gap:14px;flex-wrap:wrap}
+.clock{text-align:end}
+.clock .time{font-family:var(--f-display);font-weight:600;font-size:28px;line-height:1.1;direction:ltr;font-variant-numeric:tabular-nums}
+.clock .date{color:var(--hero-soft);font-size:13px}
+.clock .hijri{margin-top:1px}
+.ticker{overflow:hidden;background:rgba(0,0,0,.25);border-radius:12px;padding:8px 0;direction:ltr}
+.ticker-track{display:flex;width:max-content;animation:tick 70s linear infinite}
+.ticker-track span{flex:none;padding-inline:3rem;white-space:nowrap;font-weight:600;font-size:15px}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ticker:hover .ticker-track,.ticker:focus-within .ticker-track{animation-play-state:paused}
+@media (prefers-reduced-motion:reduce){.ticker-track{animation:none;width:auto;flex-wrap:wrap}.ticker-track span{white-space:normal;padding:0 14px}.ticker-track span+span{display:none}}
+.kinds{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+@media (max-width:560px){.kinds{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kind{display:flex;flex-direction:column;align-items:center;gap:2px;padding:12px 8px;min-height:80px;border:1.5px solid var(--line);border-radius:16px;background:var(--surface);cursor:pointer;box-shadow:var(--shadow);transition:all .2s ease}
+.kind:hover{border-color:var(--accent);transform:translateY(-2px)}
+.kind .kn{font-family:var(--f-display);font-weight:700;font-size:26px;line-height:1.1;color:var(--accent);font-variant-numeric:tabular-nums}
+.kind .kl{font-weight:600;font-size:13px}
+.kind[aria-pressed="true"]{background:var(--accent);border-color:var(--accent)}
+.kind[aria-pressed="true"] .kn,.kind[aria-pressed="true"] .kl{color:var(--accent-ink)}
+.dt{border:1.5px solid var(--line);border-radius:16px;padding:0 14px;background:var(--surface)}
+.dt summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:700;color:var(--accent)}
+.dt[open] summary{border-bottom:1.5px dashed var(--line);margin-bottom:10px}
+.dt .prices{white-space:pre-line;overflow-wrap:anywhere;padding-bottom:12px}
+.bk{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding-bottom:14px}
+.bk .field:first-child,.bk .bk-send,.bk .hint{grid-column:1/-1}
+.bk input{min-height:44px;width:100%;padding:6px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--tint)}
+.bk input[type=date],.bk input[type=time]{direction:ltr;text-align:start}
+.bk .hint{font-size:13px}
+.note p{overflow-wrap:anywhere;white-space:pre-line}
+.tag.tag-kind{background:var(--accent);color:var(--accent-ink)}
+.field textarea{min-height:84px;width:100%;padding:10px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--tint);resize:vertical}
+.pill-soon{background:var(--soon-bg);color:var(--soon)}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(28px,7vw,46px);line-height:1.15;text-wrap:balance;margin-top:4px}
+.sub{color:var(--hero-soft);font-size:15px;max-width:46ch;text-wrap:balance}
+.sign{display:inline-flex;align-items:center;gap:12px;background:var(--surface);color:var(--ink);padding:10px 22px;border-radius:16px;box-shadow:var(--shadow)}
+.sign .lamp{background:var(--open-solid);box-shadow:0 0 0 4px rgba(5,150,105,.2),0 0 14px 2px rgba(5,150,105,.5);animation:pulse 2.2s ease-in-out infinite}
+.sign .n{font-family:var(--f-display);font-weight:700;font-size:40px;line-height:1;color:var(--open);font-variant-numeric:tabular-nums}
+.sign .t{color:var(--muted);font-size:14px;line-height:1.35;max-width:18ch}
+
+.notice{padding:12px 16px;border:1.5px solid var(--sun);border-radius:14px;background:var(--pause-bg);color:var(--pause);font-size:14px}
+
+/* controls */
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--line);background:var(--surface);padding:6px 16px;min-height:44px;border-radius:999px;cursor:pointer;font-weight:500;font-variant-numeric:tabular-nums;transition:all .2s ease}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.sel{min-height:44px;padding:6px 16px;border:1.5px solid var(--line);border-radius:999px;background:var(--surface);max-width:100%}
+.search{flex:1 1 220px;min-width:0;min-height:44px;padding:6px 18px;border:1.5px solid var(--line);border-radius:999px;background:var(--surface)}
+.search::placeholder{color:var(--muted)}
+
+/* shop cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:16px}
+.shop{background:var(--surface);border:1.5px solid var(--line);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:14px;box-shadow:var(--shadow);min-width:0;transition:transform .2s ease}
+.shop:hover{border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+.shop[data-state="open"]{border-color:color-mix(in srgb,var(--open-solid) 50%,var(--line))}
+.s-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.s-title{min-width:0}
+.name{font-family:var(--f-display);font-weight:700;font-size:22px;line-height:1.25;overflow-wrap:anywhere}
+.owner{margin-top:2px;color:var(--muted);overflow-wrap:anywhere;font-size:14px}
+.owner .lbl{display:inline;margin-inline-end:6px}
+.lbl{display:block;font-size:12px;letter-spacing:.04em;color:var(--muted);font-weight:600}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:5px 14px;border-radius:999px;font-weight:700;font-size:13px;white-space:nowrap;flex:none}
+.pill i{width:8px;height:8px;border-radius:50%;background:currentColor;flex:none}
+.pill-open{background:var(--open-solid);color:var(--open-solid-ink)}
+.pill-closed{background:var(--closed-bg);color:var(--closed)}
+.pill-paused{background:var(--pause-bg);color:var(--pause)}
+.pill-break{background:var(--pause-bg);color:var(--pause)}
+.pill-unknown{background:var(--tint);color:var(--muted);border:1.5px dashed var(--line)}
+.ctl{border-top:1.5px dashed var(--line);padding-top:12px;display:flex;flex-direction:column;gap:6px}
+.pill-open i{animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){.pill-open i,.sign .lamp{animation:none}}
+
+.s-info{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:10px}
+.blk{background:var(--tint);border-radius:14px;padding:12px 14px;min-width:0;display:flex;flex-direction:column;gap:2px}
+.l1{font-weight:600}
+.l2,.hrs,.adm{color:var(--muted);font-size:13px}
+.hrs{margin-top:4px}
+.addr,.adm{overflow-wrap:anywhere}
+.num{font-variant-numeric:tabular-nums}
+.maplink{align-self:flex-start;margin-top:4px;color:var(--accent);font-weight:600;text-underline-offset:3px}
+
+.s-call{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tel{font-size:18px;font-weight:700;color:var(--ink);text-decoration:none;font-variant-numeric:tabular-nums;direction:ltr;unicode-bidi:isolate;overflow-wrap:anywhere;margin-inline-end:auto}
+.tel:hover{color:var(--accent)}
+.callbtn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:6px 20px;border-radius:12px;background:var(--sun);color:var(--sun-ink);font-weight:700;text-decoration:none;box-shadow:0 4px 12px -4px rgba(245,158,11,0.5);transition:filter .2s}
+.callbtn:hover{filter:brightness(1.05)}
+.wabtn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:6px 18px;border-radius:12px;background:#10b981;color:#ffffff;font-weight:700;text-decoration:none;transition:filter .2s}
+.wabtn:hover{filter:brightness(1.05)}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.tag{background:var(--tint);color:var(--ink);border-radius:999px;padding:2px 10px;font-size:12px;font-weight:600}
+.tag-home{background:var(--sun);color:var(--sun-ink)}
+
+.btn{border:1.5px solid var(--line);background:var(--surface);padding:6px 16px;min-height:44px;border-radius:12px;cursor:pointer;font-weight:500;transition:all .2s ease}
+.btn:hover{border-color:var(--accent);background:var(--tint)}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.btn-danger{color:var(--closed)}
+.btn[disabled]{opacity:.55;cursor:default}
+.empty{grid-column:1/-1;padding:40px 20px;text-align:center;color:var(--muted);background:var(--surface);border:1.5px dashed var(--line);border-radius:20px}
+
+.foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:13px;padding-top:4px}
+.foot .tip{display:flex;align-items:center;gap:8px}
+
+/* owner editor */
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.bar h1{font-size:clamp(24px,5vw,32px);margin:0}
+.hint{color:var(--muted)}
+.edit-shop{background:var(--surface);border:1.5px solid var(--line);border-radius:20px;padding:20px;display:grid;gap:14px;box-shadow:var(--shadow)}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:560px){.fields{grid-template-columns:minmax(0,1fr)}}
+.field{display:flex;flex-direction:column;gap:4px;min-width:0}
+.field label,.legend{font-size:13px;color:var(--muted);font-weight:500}
+.field input[type=text],.field input[type=time],.field input[type=tel],.field input[type=url],.field select{min-height:44px;width:100%;padding:6px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--tint)}
+.field input[type=time],.field input[type=url]{direction:ltr;text-align:start}
+.span2{grid-column:1/-1}
+.days{display:flex;flex-wrap:wrap;gap:6px}
+.day{position:relative}
+.day input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.day span{display:inline-block;padding:6px 14px;min-height:38px;border:1.5px solid var(--line);border-radius:999px;background:var(--tint);font-size:13px}
+.day input:checked+span{background:var(--closed-bg);border-color:var(--closed);color:var(--closed);font-weight:600}
+.day input:focus-visible+span{outline:3px solid var(--sun);outline-offset:2px}
+.check{display:flex;align-items:center;gap:10px;min-height:38px}
+.check input{width:18px;height:18px;accent-color:var(--accent)}
+.row-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.msg{min-height:1.6em;color:var(--muted)}
+.msg.err{color:var(--closed)}
+.savebar{position:sticky;bottom:0;z-index:5;display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 0 calc(12px + env(safe-area-inset-bottom,0px));background:var(--bg)}
+
+.toast{position:fixed;inset-inline:0;bottom:calc(20px + env(safe-area-inset-bottom,0px));display:flex;justify-content:center;pointer-events:none;z-index:20}
+.toast span{background:var(--ink);color:var(--bg);padding:8px 18px;border-radius:999px;font-size:14px;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1)}
+/* shop-owner links, stars, floating contact button */
+.more{align-self:center}
+.rate{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;border-top:1.5px dashed var(--line);padding-top:10px;color:var(--muted);font-size:13px}
+.stars{display:flex;gap:2px;direction:ltr}
+.star{border:0;background:none;cursor:pointer;min-width:36px;min-height:36px;font-size:22px;line-height:1;color:var(--line);padding:0;transition:transform .15s}
+.star.on{color:var(--sun)}
+.star:hover{transform:scale(1.15)}
+.thanks{background:var(--surface);border:1.5px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:18px 20px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px}
+.thanks strong{font-family:var(--f-display);font-size:17px;color:var(--accent);display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center}
+.thanks p{font-size:14px;line-height:1.6;max-width:60ch}
+.thanks .fr{color:var(--muted);font-size:13px;direction:ltr}
+.fab{position:fixed;z-index:15;inset-block-end:calc(16px + env(safe-area-inset-bottom,0px));inset-inline-end:max(16px,env(safe-area-inset-left,0px),env(safe-area-inset-right,0px));display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:8px 18px;border-radius:999px;background:#10b981;color:#ffffff;font-weight:700;font-size:14px;text-decoration:none;box-shadow:0 4px 14px -4px rgba(16,185,129,0.5);transition:transform .15s}
+.fab:hover{transform:scale(1.04)}
+.fab svg{flex:none}
+.fab .fab-n{direction:ltr;unicode-bidi:isolate}
+body{padding-block-end:88px}
+.tokurl{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;direction:ltr;text-align:start;overflow-wrap:anywhere;background:var(--tint);border-radius:10px;padding:8px 10px;user-select:all}
+.tokbox{border-top:1.5px dashed var(--line);padding-top:12px}
+.newlinks{display:flex;flex-direction:column;gap:10px;padding:14px}
+.newlinks ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;max-height:360px;overflow:auto}
+.newlinks li{display:flex;flex-direction:column;gap:4px}
+.ostatus{display:flex;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.ost-body{min-width:0}
+.ownbox .own-row{display:flex;gap:8px;flex-wrap:wrap;padding-bottom:12px}
+.ownbox input{flex:1 1 220px;min-width:0;min-height:44px;padding:6px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--tint);direction:ltr}
+.ownbox .msg{padding-bottom:10px}
+.edlist{display:flex;flex-direction:column;gap:16px}
+/* self-service registration frame */
+.reg{border-radius:26px;padding:3px;background:linear-gradient(135deg,var(--sun),var(--accent) 60%,var(--open));box-shadow:0 14px 34px -14px rgba(37,99,235,.45)}
+.reg-in{background:var(--surface);border-radius:23px;padding:22px 24px;display:flex;flex-direction:column;gap:14px}
+.reg-head{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.reg-ic{flex:none;width:54px;height:54px;border-radius:16px;background:var(--sun);color:var(--sun-ink);display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:700;font-family:var(--f-display)}
+.reg-t{flex:1 1 240px;min-width:0}
+.reg-t h2{font-family:var(--f-display);font-weight:700;font-size:clamp(24px,5.5vw,34px);line-height:1.2}
+.reg-t p{color:var(--muted);font-size:14px;margin-top:2px}
+.reg-cta{min-height:52px;padding:8px 28px;border-radius:14px;border:0;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:16px;cursor:pointer;box-shadow:0 8px 18px -8px rgba(37,99,235,.7);transition:filter .2s}
+.reg-cta:hover{filter:brightness(1.08)}
+.reg-perks{display:flex;gap:8px;flex-wrap:wrap;list-style:none;margin:0;padding:0}
+.reg-perks li{background:var(--tint);border-radius:999px;padding:3px 12px;font-size:13px;font-weight:600}
+.reg-form{border-top:1.5px dashed var(--line);padding-top:14px;display:flex;flex-direction:column;gap:14px}
+.reg-submit{min-height:52px;font-size:16px}
+.rgmodal{position:fixed;inset:0;z-index:18;background:rgba(15,23,42,.62);display:flex;align-items:center;justify-content:center;padding:16px;overflow:auto;font-family:var(--f-body);color:var(--ink)}
+.rgbox{background:var(--surface);border:1.5px solid var(--line);border-radius:22px;max-width:560px;width:100%;padding:22px;display:flex;flex-direction:column;gap:12px;box-shadow:0 24px 48px -16px rgba(0,0,0,.5);max-height:100%;overflow:auto}
+.rgbox h2{font-family:var(--f-display);font-size:24px;color:var(--open)}
+</style>
+
+
+<div id="app" dir="rtl" lang="ar"></div>
+<div id="toast" class="toast" dir="rtl" lang="ar" hidden><span id="toastText"></span></div>
+<script type="application/json" id="shop-data">{"demo":false,"shops":[]}</script>
+<script id="app-js">
+(function () {
+  'use strict';
+  var WK = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+  var WILAYAS = ['أدرار','الشلف','الأغواط','أم البواقي','باتنة','بجاية','بسكرة','بشار','البليدة','البويرة','تمنراست','تبسة','تلمسان','تيارت','تيزي وزو','الجزائر','الجلفة','جيجل','سطيف','سعيدة','سكيكدة','سيدي بلعباس','عنابة','قالمة','قسنطينة','المدية','مستغانم','المسيلة','معسكر','ورقلة','وهران','البيض','إليزي','برج بوعريريج','بومرداس','الطارف','تندوف','تيسمسيلت','الوادي','خنشلة','سوق أهراس','تيبازة','ميلة','عين الدفلى','النعامة','عين تموشنت','غرداية','غليزان','تيميمون','برج باجي مختار','أولاد جلال','بني عباس','عين صالح','عين قزام','تقرت','جانت','المغير','المنيعة'];
+  var WILAYAS_FR = ['Adrar','Chlef','Laghouat','Oum El Bouaghi','Batna','Béjaïa','Biskra','Béchar','Blida','Bouira','Tamanrasset','Tébessa','Tlemcen','Tiaret','Tizi Ouzou','Alger','Djelfa','Jijel','Sétif','Saïda','Skikda','Sidi Bel Abbès','Annaba','Guelma','Constantine','Médéa','Mostaganem','M’Sila','Mascara','Ouargla','Oran','El Bayadh','Illizi','Bordj Bou Arréridj','Boumerdès','El Tarf','Tindouf','Tissemsilt','El Oued','Khenchela','Souk Ahras','Tipaza','Mila','Aïn Defla','Naâma','Aïn Témouchent','Ghardaïa','Relizane','Timimoun','Bordj Badji Mokhtar','Ouled Djellal','Béni Abbès','In Salah','In Guezzam','Touggourt','Djanet','El Meghaier','El Menia'];
+
+  /* shop types: [group id, ar, fr, [[key, ar, fr], ...]] */
+  var CATS = [
+    ['food', 'الغذاء والمطاعم', 'Alimentation et restauration', [
+      ['bakery', 'مخبزة', 'Boulangerie'], ['pastry', 'حلويات', 'Pâtisserie'], ['grocery', 'بقالة', 'Épicerie'], ['supermarket', 'سوبرماركت', 'Supermarché'], ['butcher', 'جزارة', 'Boucherie'], ['fish', 'بائع أسماك', 'Poissonnerie'], ['greengrocer', 'خضر وفواكه', 'Fruits et légumes'], ['poultry', 'دواجن', 'Volaille'], ['dairy', 'ألبان ومشتقاتها', 'Crèmerie'], ['spices', 'عطارة وتوابل', 'Épices'], ['nuts', 'مكسرات وفواكه جافة', 'Fruits secs'], ['restaurant', 'مطعم', 'Restaurant'], ['fastfood', 'وجبات سريعة', 'Restauration rapide'], ['cafe', 'مقهى', 'Café'], ['pizzeria', 'بيتزيريا', 'Pizzeria'], ['icecream', 'مثلجات', 'Glacier'], ['juice', 'عصائر ومشروبات', 'Jus et boissons'], ['caterer', 'تموين الحفلات', 'Traiteur']]],
+    ['health', 'الصحة', 'Santé', [
+      ['doctor', 'طبيب عام', 'Médecin généraliste'], ['specialist', 'طبيب مختص', 'Médecin spécialiste'], ['dentist', 'طبيب أسنان', 'Dentiste'], ['pharmacy', 'صيدلية', 'Pharmacie'], ['vet', 'طبيب بيطري', 'Vétérinaire'], ['clinic', 'عيادة أو مصحة', 'Clinique'], ['lab', 'مخبر تحاليل', 'Laboratoire d’analyses'], ['radiology', 'مركز أشعة', 'Centre de radiologie'], ['optician', 'نظارات وبصريات', 'Opticien'], ['physio', 'علاج طبيعي', 'Kinésithérapie'], ['psychologist', 'أخصائي نفساني', 'Psychologue'], ['nurse', 'تمريض وحقن', 'Soins infirmiers'], ['medsupply', 'معدات طبية', 'Matériel médical'], ['herbalist', 'عشّاب', 'Herboriste']]],
+    ['craft', 'الحرف والصيانة', 'Métiers et dépannage', [
+      ['carpenter', 'نجار', 'Menuisier'], ['blacksmith', 'حداد', 'Forgeron et ferronnier'], ['plumber', 'سباك', 'Plombier'], ['electrician', 'كهربائي', 'Électricien'], ['mason', 'بناء', 'Maçon'], ['painter', 'دهّان', 'Peintre en bâtiment'], ['tiler', 'مبلّط', 'Carreleur'], ['welder', 'لحّام', 'Soudeur'], ['glazier', 'زجّاج', 'Vitrier'], ['aluminium', 'نجارة الألمنيوم', 'Menuiserie aluminium'], ['locksmith', 'قفّال', 'Serrurier'], ['plaster', 'جبّاس', 'Plâtrier'], ['hvac', 'تكييف وتبريد', 'Climatisation et froid'], ['appliance', 'تصليح أجهزة كهرومنزلية', 'Réparation d’électroménager'], ['tailor', 'خيّاط', 'Tailleur'], ['seamstress', 'خياطة نسائية', 'Couturière'], ['cobbler', 'إسكافي', 'Cordonnier'], ['upholsterer', 'منجّد', 'Tapissier'], ['potter', 'فخّار', 'Potier'], ['jeweler', 'صائغ', 'Bijoutier'], ['watchmaker', 'ساعاتي', 'Horloger'], ['weaver', 'نسيج وزرابي', 'Tissage et tapis'], ['leather', 'جلود', 'Maroquinerie'], ['dyeing', 'صباغة الجلود والقماش', 'Teinturerie cuir et tissus'], ['stonecutter', 'نحّات الحجر', 'Tailleur de pierre'], ['cleaning', 'تنظيف', 'Nettoyage'], ['movers', 'نقل الأثاث', 'Déménagement'], ['gardener', 'بستاني', 'Jardinier']]],
+    ['auto', 'السيارات والنقل', 'Auto et transport', [
+      ['mechanic', 'ميكانيكي', 'Mécanicien'], ['bodyshop', 'سمكري سيارات', 'Carrossier'], ['autoelec', 'كهرباء السيارات', 'Électricien auto'], ['carwash', 'غسيل السيارات', 'Lavage auto'], ['fuel', 'محطة وقود', 'Station-service'], ['parts', 'قطع غيار', 'Pièces auto'], ['carrental', 'كراء السيارات', 'Location de voitures'], ['drivingschool', 'مدرسة سياقة', 'Auto-école'], ['taxi', 'سيارة أجرة', 'Taxi'], ['moto', 'دراجات نارية', 'Motos'], ['cardealer', 'بيع السيارات', 'Concessionnaire']]],
+    ['retail', 'التجارة والتسوق', 'Commerce et shopping', [
+      ['clothing', 'ملابس', 'Vêtements'], ['shoes', 'أحذية', 'Chaussures'], ['kids', 'لوازم الأطفال', 'Articles pour enfants'], ['fabrics', 'أقمشة', 'Tissus'], ['perfume', 'عطور', 'Parfumerie'], ['cosmetics', 'مستحضرات تجميل', 'Cosmétiques'], ['electronics', 'إلكترونيات', 'Électronique'], ['phones', 'هواتف', 'Téléphonie'], ['computers', 'معلوماتية', 'Informatique'], ['furniture', 'أثاث', 'Meubles'], ['appliancesale', 'بيع أجهزة كهرومنزلية', 'Vente d’électroménager'], ['household', 'أدوات منزلية', 'Articles ménagers'], ['hardware', 'أدوات وعتاد', 'Quincaillerie'], ['building', 'مواد البناء', 'Matériaux de construction'], ['paint', 'دهانات', 'Peintures'], ['florist', 'أزهار', 'Fleuriste'], ['toys', 'ألعاب', 'Jouets'], ['books', 'مكتبة', 'Librairie'], ['stationery', 'قرطاسية', 'Papeterie'], ['sport', 'معدات رياضية', 'Articles de sport'], ['gifts', 'هدايا', 'Cadeaux'], ['antiques', 'تحف وأنتيكا', 'Antiquités'], ['petshop', 'حيوانات أليفة', 'Animalerie'], ['agri', 'مستلزمات فلاحية', 'Fournitures agricoles'], ['feed', 'أعلاف', 'Aliments pour bétail'], ['bazaar', 'بازار', 'Bazar']]],
+    ['beauty', 'التجميل والعناية', 'Beauté et bien-être', [
+      ['barber', 'حلاق', 'Coiffeur pour hommes'], ['salon', 'صالون نسائي', 'Salon de coiffure pour femmes'], ['beautycenter', 'مركز تجميل', 'Institut de beauté'], ['hammam', 'حمّام', 'Hammam'], ['spa', 'سبا', 'Spa'], ['gym', 'قاعة رياضة', 'Salle de sport']]],
+    ['services', 'الخدمات', 'Services', [
+      ['insurance', 'تأمينات', 'Assurances'], ['notary', 'موثّق', 'Notaire'], ['lawyer', 'محامي', 'Avocat'], ['bailiff', 'محضر قضائي', 'Huissier de justice'], ['accountant', 'محاسب', 'Expert-comptable'], ['realestate', 'وكالة عقارية', 'Agence immobilière'], ['travel', 'وكالة أسفار', 'Agence de voyages'], ['photo', 'مصوّر', 'Photographe'], ['printing', 'مطبعة', 'Imprimerie'], ['cyber', 'مقهى إنترنت', 'Cybercafé'], ['laundry', 'مغسلة ملابس', 'Pressing'], ['translation', 'ترجمة', 'Traduction'], ['delivery', 'توصيل', 'Livraison'], ['maids', 'خادمات المنازل', 'Aides ménagères'], ['architect', 'مهندس معماري', 'Architecte'], ['engineering', 'مكتب دراسات', 'Bureau d’études'], ['surveyor', 'مساح', 'Géomètre'], ['phonerepair', 'تصليح الهواتف', 'Réparation de téléphones'], ['pcrepair', 'صيانة الحواسيب', 'Dépannage informatique']]],
+    ['edu', 'التعليم والأطفال', 'Éducation et enfance', [
+      ['school', 'مدرسة', 'École'], ['lessons', 'دروس خصوصية', 'Cours de soutien'], ['languages', 'مركز لغات', 'Centre de langues'], ['nursery', 'حضانة', 'Crèche'], ['quran', 'مدرسة قرآنية', 'École coranique']]],
+    ['stay', 'الإقامة والمناسبات', 'Hébergement et événements', [
+      ['hotel', 'فندق', 'Hôtel'], ['guesthouse', 'نزل ودار ضيافة', 'Maison d’hôtes'], ['hall', 'قاعة حفلات', 'Salle des fêtes'], ['guide', 'مرشد سياحي', 'Guide touristique']]],
+    ['other', 'أخرى', 'Autres', [['other', 'نشاط آخر', 'Autre activité']]]
+  ];
+  var CATMAP = {};
+  CATS.forEach(function (g) { g[3].forEach(function (c) { CATMAP[c[0]] = { ar: c[1], fr: c[2] }; }); });
+  function catName(k) { return Object.prototype.hasOwnProperty.call(CATMAP, k) ? CATMAP[k][lang] : ''; }
+  function catOptions(selected, present) {
+    return CATS.map(function (g) {
+      var items = g[3].filter(function (c) { return !present || present[c[0]]; });
+      if (!items.length) return '';
+      return '<optgroup label="' + esc(lang === 'fr' ? g[2] : g[1]) + '">' + items.map(function (c) {
+        return '<option value="' + esc(c[0]) + '"' + (c[0] === selected ? ' selected' : '') + '>' + esc(lang === 'fr' ? c[2] : c[1]) + '</option>';
+      }).join('') + '</optgroup>';
+    }).join('');
+  }
+
+  var LANGS = {
+    ar: {
+      dir: 'rtl', code: 'ar',
+      days: ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'],
+      wil: WILAYAS,
+      flagAlt: 'العلم الجزائري',
+      h1: 'المحلات المفتوحة الآن',
+      sub: 'ما تشقاش، شوف المحل مفتوح قبل ما تروح.',
+      tally: function (o, n) { return n ? 'مفتوح الآن من أصل ' + n + (n === 1 ? ' محل' : n <= 10 ? ' محلات' : ' محل') : 'لا توجد محلات بعد'; },
+      all: 'الكل', open: 'مفتوح', closed: 'مغلق', pausedPill: 'مغلق مؤقتًا',
+      filterLabel: 'تصفية المحلات', allW: 'كل الولايات', wLabel: 'الولاية',
+      search: 'ابحث باسم المحل أو صاحبه أو البلدية', searchLabel: 'بحث',
+      owner: 'صاحب المحل', time: 'الوقت', place: 'موقع المحل',
+      pausedL1: 'المحل مغلق في الوقت الحالي.', pausedL2: 'تواصل مع صاحب المحل لمعرفة موعد العودة.',
+      allDay: 'يعمل على مدار الساعة',
+      closesAt: function (t, next) { return 'يغلق الساعة ' + t + (next ? ' بعد منتصف الليل' : ''); },
+      dur: function (mins) {
+        mins = Math.max(1, Math.round(mins));
+        var h = Math.floor(mins / 60), m = mins % 60, p = [];
+        var pl = function (n, one, two, few, many) { return n === 1 ? one : n === 2 ? two : n <= 10 ? n + ' ' + few : n + ' ' + many; };
+        if (h > 0) p.push(pl(h, 'ساعة', 'ساعتين', 'ساعات', 'ساعة'));
+        if (m > 0) p.push(pl(m, 'دقيقة', 'دقيقتين', 'دقائق', 'دقيقة'));
+        return 'بعد ' + p.join(' و');
+      },
+      never: 'لا توجد أيام عمل محددة.',
+      opensAt: function (k, day, t, days) { return 'يفتح ' + (k === 0 ? 'اليوم' : k === 1 ? 'غدًا' : 'يوم ' + days[day]) + ' الساعة ' + t; },
+      hours: function (all, o, c, offs) { return (all ? 'على مدار 24 ساعة' : 'من ' + o + ' إلى ' + c) + ' · ' + (offs.length ? 'عطلة: ' + offs.join('، ') : 'بدون عطلة أسبوعية'); },
+      baladiya: function (x) { return 'بلدية ' + x; }, daira: function (x) { return 'دائرة ' + x; }, wilaya: function (x) { return 'ولاية ' + x; },
+      map: 'فتح الموقع على الخريطة', call: 'اتصال', copy: 'نسخ الرقم', copied: 'تم نسخ الرقم', selectIt: 'حدّد الرقم وانسخه',
+      tip: 'احفظ الصفحة في المفضلة لتعرف دائمًا واش مفتوح. الأوقات بتوقيت الجزائر.',
+      demo: 'هذه بيانات تجريبية لمحلات غير حقيقية. يستبدلها صاحب الصفحة بمحلاته من زر «إدارة المحلات».',
+      manage: 'إدارة المحلات', empty0: 'لم تتم إضافة محلات بعد.', emptyF: 'لا توجد محلات مطابقة.',
+      breakPill: 'استراحة', unknownPill: 'غير مؤكد',
+      breakL1: 'المحل في استراحة قصيرة.', breakL2: 'يعود قريبًا. تواصل مع صاحب المحل إن احتجت.',
+      unknownL1: 'لم يحدّث صاحب المحل الحالة منذ أكثر من 12 ساعة.', unknownL2: 'اتصل بالمحل للتأكد قبل الذهاب.',
+      manOpen: 'أكد صاحب المحل أنه مفتوح الآن.', manClosed: 'أعلن صاحب المحل أنه مغلق الآن.',
+      ctlTitle: 'حالة محلي الآن', ctlAuto: 'تلقائي', ctlOpen: 'مفتوح', ctlBreak: 'استراحة', ctlClosed: 'مغلق',
+      catAll: 'كل الأنواع', catLabel: 'نوع النشاط', wa: 'واتساب',
+      ticker: 'مرحبًا بكم. هذا الموقع جزائري يخبرك عن المحلات وأصحاب الحرف والخدمات أثناء تواجدهم وتوفرهم هنا. وإن كانوا غير متوفرين فسيخبرك أيضًا بأرقام هواتفهم وعناوينهم، تجدها هنا، وحتى أرقام الواتساب. الاشتراك مجاني لمدة سنة لأول 1000 مشترك.',
+      reg: {
+        title: 'سجّل محلك هنا', sub: 'سجّل محلك بنفسك في دقيقة واحدة، ليراه الزبائن فورًا ويعرفوا متى تكون مفتوحًا.',
+        perks: ['مجاني', 'يظهر فورًا', 'رابط سرّي لتعديل أوقاتك وحالتك'],
+        cta: 'ابدأ تسجيل محلك', ctaHide: 'إخفاء النموذج', submit: 'تسجيل محلي', required: 'الحقول المعلّمة بـ * إلزامية. يلزم هاتف أو واتساب واحد على الأقل.',
+        errName: 'اكتب اسم المحل.', errContact: 'اكتب رقم هاتف أو واتساب صالحًا للمحل.', errWil: 'اختر الولاية.', errCat: 'اختر نوع النشاط.',
+        noCrypto: 'متصفحك لا يدعم توليد المفاتيح الآمنة. جرّب متصفحًا حديثًا.', working: 'جارٍ تسجيل المحل…', full: 'بلغت الحد الأقصى للمحلات المسجلة من هذا الحساب.',
+        doneTitle: 'تم تسجيل محلك بنجاح', linkLbl: 'رابط التعديل السرّي الخاص بك',
+        warn: 'احتفظ بهذا الرابط الآن: لا يمكن عرضه مرة أخرى، ومن يملكه يستطيع تعديل محلك. لا تشاركه مع أحد.',
+        shared: 'محلك ظاهر الآن لزوار الموقع.', local: 'تنبيه: تعذّر الحفظ المشترك الآن، فالمحل ظاهر على هذا الجهاز فقط. احتفظ بالرابط وأبلغ مدير الموقع.',
+        copy: 'نسخ الرابط', edit: 'فتح لوحة تعديل محلي الآن', close: 'تم، حفظت الرابط'
+      },
+      kindsLabel: 'أقسام الموقع',
+      kinds: { service: 'الخدمات', shop: 'المحلات', product: 'المنتجات', goods: 'السلع' },
+      kind1: { service: 'خدمة', shop: 'محل', product: 'منتج', goods: 'سلعة' },
+      soonPill: 'متوفر قريبًا',
+      more: function (n) { return 'عرض المزيد (' + n + ')'; },
+      pickWil: 'اختر الولاية', pickWilMsg: 'اختر ولايتك من القائمة لعرض المحلات.',
+      loadingW: function (a, n) { return 'جارٍ تحميل المحلات… (' + a + ' من ' + n + ')'; }, loadFailW: 'تعذّر تحميل محلات هذه الولاية. أعد اختيار الولاية للمحاولة مرة أخرى.',
+      ownSummary: 'أنا صاحب محل', ownLabel: 'الصق رابط التعديل الخاص بمحلك', ownGo: 'فتح',
+      ownerBad: 'رابط التعديل غير صحيح أو أُلغي. اطلب رابطًا جديدًا من مدير الصفحة.',
+      newLinksTitle: 'روابط التعديل الجديدة',
+      newLinksHint: 'انسخ كل رابط وأرسله لصاحب المحل وحده. تختفي هذه القائمة عند إغلاق الصفحة ولا يمكن استرجاعها.',
+      hideLinks: 'إخفاء القائمة', copyAll: 'نسخ الكل', copiedAll: 'تم نسخ الروابط',
+      rateLbl: 'تقييمك (يُحفظ في متصفحك)', rateAria: function (n) { return n + ' من 5'; },
+      thanksAr: 'شكراً لكم على زيارتنا، نحن دائماً في خدمتكم ونطمح للأفضل معكم.',
+      thanksFr: 'Merci de votre visite, nous sommes toujours à votre service et aspirons à vous offrir le meilleur.',
+      fab: 'اتصل بنا', fabAria: 'تواصل مع خدمة العملاء عبر واتساب', fabMsg: 'السلام عليكم، أود الاستفسار والتواصل معكم عبر موقع ما تشقاش.',
+      own: {
+        title: function (n) { return 'محلي: ' + n; },
+        hint: 'عدّل الحالة والأوقات والأسعار ثم اضغط «حفظ التعديلات». لا يمكن لغيرك تعديل محلك بدون هذا الرابط.',
+        status: 'حالة المحل الآن', save: 'حفظ التعديلات', back: 'عرض الصفحة',
+        saved: 'تم الحفظ. يرى الزبائن التغييرات الآن.',
+        noDb: 'الحفظ غير متاح في هذا العرض. سجّل الدخول ثم أعد فتح الرابط.',
+        noRight: 'لا تملك صلاحية الحفظ على هذه الصفحة. اطلب من مدير الصفحة منحك صلاحية «مساهم».'
+      },
+      soonL1: function (m) { return 'سيكون متوفرًا ' + L.dur(m) + '.'; },
+      soonL2: 'أكد صاحب المحل أنه سيعود إلى التوفر قريبًا.',
+      ctlSoon: function (h) { return h === 1 ? 'متوفر بعد ساعة' : h === 2 ? 'متوفر بعد ساعتين' : 'متوفر بعد ' + h + ' ساعات'; },
+      pricesBtn: 'عرض الأسعار', noteLbl: 'ملاحظة من صاحب المحل',
+      bookBtn: 'حجز موعد', bookName: 'اسمك', bookDate: 'التاريخ', bookTime: 'الوقت', bookSend: 'أرسل الطلب عبر واتساب',
+      bookHint: 'يفتح واتساب برسالة جاهزة لصاحب المحل. يرد عليك بنعم أو يقترح موعدًا آخر.',
+      bookMsg: function (shop, name, date, time) { return 'السلام عليكم، أريد حجز موعد لدى «' + shop + '» عبر موقع ما تشقاش.\n' + (name ? 'الاسم: ' + name + '\n' : '') + (date ? 'التاريخ: ' + date + '\n' : '') + (time ? 'الوقت: ' + time + '\n' : '') + 'هل هذا الموعد مناسب؟'; },
+      ed: {
+        cat: 'نوع النشاط', pickCat: 'اختر نوع النشاط', wa: 'رقم واتساب (اختياري)', kind: 'القسم', prices: 'عرض الأسعار (حتى 300 حرف)', note: 'ملاحظة من صاحب المحل (حتى 150 حرف)',
+        errWa: function (n) { return 'رقم واتساب المحل «' + n + '» غير صالح.'; },
+        title: 'إدارة المحلات', hint: 'عدّل البيانات ثم اضغط «حفظ ونشر». يعدّل أصحاب المحلات حالتهم وأوقاتهم وأسعارهم بأنفسهم برابطهم الخاص، وتُدمج تعديلاتهم هنا عند الحفظ.',
+        tooBig: function (n) { return 'حجم الصفحة (' + n + ' محل) يتجاوز 15 ميغابايت، وهو الحد الأقصى للنشر. احذف بعض المحلات أو انقل البيانات إلى قاعدة بيانات خارجية.'; },
+        tokTitle: 'رابط التعديل الخاص بصاحب المحل',
+        tokHint: 'أرسل هذا الرابط لصاحب المحل وحده. يظهر مرة واحدة بعد «حفظ ونشر» ولا يمكن استرجاعه.',
+        tokCopy: 'نسخ الرابط', tokMake: 'توليد رابط تعديل', tokRegen: 'توليد رابط جديد (يلغي القديم)',
+        tokHave: 'للمحل رابط تعديل فعّال. لا يمكن عرضه مرة أخرى، لكن يمكنك توليد رابط جديد يلغي القديم.',
+        tokNone: 'لا يوجد رابط تعديل لهذا المحل بعد.',
+        tokAll: 'توليد روابط لكل المحلات التي بلا رابط',
+        tokAllDone: function (n) { return 'تم توليد ' + n + ' رابطًا. اضغط «حفظ ونشر» لاعتمادها.'; },
+        baseLbl: 'الرابط العام لصفحتك (يُبنى عليه رابط كل صاحب محل)', baseNeed: 'اكتب الرابط العام للصفحة أولًا حتى تظهر روابط التعديل.',
+        find: 'ابحث في المحلات المراد تعديلها', none: 'لا توجد محلات مطابقة.',
+        more: function (n) { return 'عرض المزيد (' + n + ')'; },
+        name: 'اسم المحل', owner: 'اسم صاحب المحل', phone: 'رقم الهاتف', wilaya: 'الولاية', pickW: 'اختر الولاية', daira: 'الدائرة', baladiya: 'البلدية',
+        address: 'عنوان المحل (الشارع أو الحي أو أقرب معلم)', map: 'رابط الموقع على الخريطة (اختياري)', open: 'يفتح', close: 'يغلق',
+        off: 'أيام العطلة الأسبوعية', paused: 'مغلق مؤقتًا (إجازة أو ظرف طارئ)',
+        del: 'حذف المحل', delYes: 'تأكيد حذف المحل', delNo: 'تراجع', add: '+ إضافة محل', save: 'حفظ ونشر', cancel: 'إلغاء',
+        shop: function (i) { return 'محل ' + i; },
+        errName: function (i) { return 'اكتب اسم المحل رقم ' + i + '.'; },
+        errMap: function (n) { return 'رابط الخريطة للمحل «' + n + '» غير مقبول. يجب أن يبدأ بـ https:// وأن يكون من خرائط Google أو OpenStreetMap أو Waze أو Apple أو Bing.'; },
+        errPhone: function (n) { return 'رقم هاتف المحل «' + n + '» غير صالح. استعمل الأرقام والمسافات فقط.'; },
+        errTime: function (n) { return 'حدّد وقت الفتح والإغلاق للمحل «' + n + '».'; },
+        saving: 'جارٍ الحفظ…', saved: 'تم الحفظ.',
+        conflict: 'نُشرت نسخة أحدث من الصفحة. ستُحمَّل الآن، ثم أعد التعديل.',
+        noRight: 'ليست لديك صلاحية تعديل هذه الصفحة.', rate: 'محاولات كثيرة. انتظر قليلًا ثم احفظ.', fail: 'تعذّر الحفظ. حاول مرة أخرى.'
+      }
+    },
+    fr: {
+      dir: 'ltr', code: 'fr',
+      days: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'],
+      wil: WILAYAS_FR,
+      flagAlt: 'Drapeau de l’Algérie',
+      h1: 'Les commerces ouverts maintenant',
+      sub: 'Matchqach : vérifiez que le commerce est ouvert avant de vous déplacer.',
+      tally: function (o, n) { return n ? (o === 1 ? 'ouvert' : 'ouverts') + ' maintenant sur ' + n + (n === 1 ? ' commerce' : ' commerces') : 'Aucun commerce pour le moment'; },
+      all: 'Tous', open: 'Ouverts', closed: 'Fermés', pausedPill: 'Fermé temporairement',
+      filterLabel: 'Filtrer les commerces', allW: 'Toutes les wilayas', wLabel: 'Wilaya',
+      search: 'Rechercher un commerce, un propriétaire, une commune', searchLabel: 'Recherche',
+      owner: 'Propriétaire', time: 'Horaires', place: 'Localisation',
+      pausedL1: 'Le commerce est fermé pour le moment.', pausedL2: 'Contactez le propriétaire pour connaître la date de réouverture.',
+      allDay: 'Ouvert 24h/24',
+      closesAt: function (t, next) { return 'Ferme à ' + t + (next ? ' (après minuit)' : ''); },
+      dur: function (mins) {
+        mins = Math.max(1, Math.round(mins));
+        var h = Math.floor(mins / 60), m = mins % 60, p = [];
+        if (h > 0) p.push(h + ' h');
+        if (m > 0) p.push(m + ' min');
+        return 'dans ' + p.join(' ');
+      },
+      never: 'Aucun jour d’ouverture défini.',
+      opensAt: function (k, day, t, days) { return 'Ouvre ' + (k === 0 ? 'aujourd’hui' : k === 1 ? 'demain' : days[day]) + ' à ' + t; },
+      hours: function (all, o, c, offs) { return (all ? 'Ouvert 24h/24' : 'De ' + o + ' à ' + c) + ' · ' + (offs.length ? 'Congé : ' + offs.join(', ') : 'Sans congé hebdomadaire'); },
+      baladiya: function (x) { return 'Commune de ' + x; }, daira: function (x) { return 'Daïra de ' + x; }, wilaya: function (x) { return 'Wilaya de ' + x; },
+      map: 'Ouvrir sur la carte', call: 'Appeler', copy: 'Copier le numéro', copied: 'Numéro copié', selectIt: 'Sélectionnez le numéro pour le copier',
+      tip: 'Ajoutez la page à vos favoris pour toujours savoir ce qui est ouvert. Heure d’Algérie.',
+      demo: 'Données de démonstration : commerces fictifs. Le propriétaire de la page les remplace via « Gérer les commerces ».',
+      manage: 'Gérer les commerces', empty0: 'Aucun commerce ajouté pour le moment.', emptyF: 'Aucun commerce correspondant.',
+      breakPill: 'En pause', unknownPill: 'Non confirmé',
+      breakL1: 'Le commerce fait une courte pause.', breakL2: 'Retour bientôt. Contactez le propriétaire si besoin.',
+      unknownL1: 'Le propriétaire n’a pas mis à jour le statut depuis plus de 12 h.', unknownL2: 'Appelez pour confirmer avant de vous déplacer.',
+      manOpen: 'Le propriétaire confirme : ouvert maintenant.', manClosed: 'Le propriétaire indique : fermé maintenant.',
+      ctlTitle: 'Statut de mon commerce', ctlAuto: 'Auto', ctlOpen: 'Ouvert', ctlBreak: 'Pause', ctlClosed: 'Fermé',
+      catAll: 'Tous les types', catLabel: 'Type d’activité', wa: 'WhatsApp',
+      ticker: 'Bienvenue ! Ce site algérien vous indique quels commerces, artisans et prestataires de services sont présents et disponibles en ce moment. S’ils ne sont pas disponibles, vous trouvez aussi ici leurs numéros de téléphone, leurs adresses et même leurs numéros WhatsApp. Inscription gratuite pendant un an pour les 1 000 premiers inscrits.',
+      reg: {
+        title: 'Inscrivez votre commerce ici', sub: 'Inscrivez-vous vous-même en une minute : les clients voient aussitôt votre commerce et savent quand vous êtes ouvert.',
+        perks: ['Gratuit', 'Visible immédiatement', 'Lien secret pour modifier vos horaires et votre statut'],
+        cta: 'Commencer l’inscription', ctaHide: 'Masquer le formulaire', submit: 'Inscrire mon commerce', required: 'Les champs marqués d’un * sont obligatoires. Au moins un numéro (téléphone ou WhatsApp) est requis.',
+        errName: 'Saisissez le nom du commerce.', errContact: 'Saisissez un numéro de téléphone ou WhatsApp valide.', errWil: 'Choisissez la wilaya.', errCat: 'Choisissez le type d’activité.',
+        noCrypto: 'Votre navigateur ne permet pas de générer des clés sécurisées. Essayez un navigateur récent.', working: 'Inscription en cours…', full: 'Vous avez atteint le nombre maximal de commerces inscrits avec ce compte.',
+        doneTitle: 'Votre commerce est inscrit', linkLbl: 'Votre lien de modification secret',
+        warn: 'Conservez ce lien maintenant : il ne pourra plus être affiché et quiconque le détient peut modifier votre commerce. Ne le partagez avec personne.',
+        shared: 'Votre commerce est maintenant visible par les visiteurs.', local: 'Attention : l’enregistrement partagé a échoué, le commerce n’est visible que sur cet appareil. Conservez le lien et prévenez l’administrateur.',
+        copy: 'Copier le lien', edit: 'Ouvrir l’éditeur de mon commerce', close: 'OK, j’ai enregistré le lien'
+      },
+      kindsLabel: 'Rubriques du site',
+      kinds: { service: 'Services', shop: 'Commerces', product: 'Produits', goods: 'Marchandises' },
+      kind1: { service: 'Service', shop: 'Commerce', product: 'Produit', goods: 'Marchandise' },
+      soonPill: 'Bientôt disponible',
+      more: function (n) { return 'Afficher plus (' + n + ')'; },
+      pickWil: 'Choisir la wilaya', pickWilMsg: 'Choisissez votre wilaya dans la liste pour afficher les commerces.',
+      loadingW: function (a, n) { return 'Chargement des commerces… (' + a + ' sur ' + n + ')'; }, loadFailW: 'Impossible de charger les commerces de cette wilaya. Choisissez-la à nouveau pour réessayer.',
+      ownSummary: 'Je suis commerçant', ownLabel: 'Collez le lien de modification de votre commerce', ownGo: 'Ouvrir',
+      ownerBad: 'Lien de modification invalide ou révoqué. Demandez-en un nouveau à l’administrateur de la page.',
+      newLinksTitle: 'Nouveaux liens de modification',
+      newLinksHint: 'Copiez chaque lien et envoyez-le uniquement à son propriétaire. Cette liste disparaît à la fermeture de la page et ne peut pas être récupérée.',
+      hideLinks: 'Masquer la liste', copyAll: 'Tout copier', copiedAll: 'Liens copiés',
+      rateLbl: 'Votre note (enregistrée dans votre navigateur)', rateAria: function (n) { return n + ' sur 5'; },
+      thanksAr: 'شكراً لكم على زيارتنا، نحن دائماً في خدمتكم ونطمح للأفضل معكم.',
+      thanksFr: 'Merci de votre visite, nous sommes toujours à votre service et aspirons à vous offrir le meilleur.',
+      fab: 'Contact', fabAria: 'Contacter le service client sur WhatsApp', fabMsg: 'Bonjour, je souhaite me renseigner et vous contacter via le site Matchqach.',
+      own: {
+        title: function (n) { return 'Mon commerce : ' + n; },
+        hint: 'Modifiez le statut, les horaires et les prix puis cliquez sur « Enregistrer ». Personne d’autre ne peut modifier votre commerce sans ce lien.',
+        status: 'Statut actuel du commerce', save: 'Enregistrer', back: 'Voir la page',
+        saved: 'Enregistré. Les clients voient les changements.',
+        noDb: 'L’enregistrement n’est pas disponible ici. Connectez-vous puis rouvrez le lien.',
+        noRight: 'Vous n’avez pas le droit d’enregistrer sur cette page. Demandez le rôle « contributeur » à l’administrateur.'
+      },
+      soonL1: function (m) { return 'Sera disponible ' + L.dur(m) + '.'; },
+      soonL2: 'Le propriétaire confirme qu’il sera bientôt disponible.',
+      ctlSoon: function (h) { return 'Dispo dans ' + h + ' h'; },
+      pricesBtn: 'Voir les prix', noteLbl: 'Note du propriétaire',
+      bookBtn: 'Prendre rendez-vous', bookName: 'Votre nom', bookDate: 'Date', bookTime: 'Heure', bookSend: 'Envoyer la demande par WhatsApp',
+      bookHint: 'WhatsApp s’ouvre avec un message prêt pour le propriétaire. Il vous répond « oui » ou propose un autre horaire.',
+      bookMsg: function (shop, name, date, time) { return 'Bonjour, je souhaite prendre rendez-vous chez « ' + shop + ' » via le site Matchqach.\n' + (name ? 'Nom : ' + name + '\n' : '') + (date ? 'Date : ' + date + '\n' : '') + (time ? 'Heure : ' + time + '\n' : '') + 'Ce rendez-vous vous convient-il ?'; },
+      ed: {
+        cat: 'Type d’activité', pickCat: 'Choisir le type', wa: 'Numéro WhatsApp (facultatif)', kind: 'Rubrique', prices: 'Liste des prix (300 caractères max.)', note: 'Note du propriétaire (150 caractères max.)',
+        errWa: function (n) { return 'Le numéro WhatsApp de « ' + n + ' » est invalide.'; },
+        title: 'Gérer les commerces', hint: 'Modifiez les données puis cliquez sur « Enregistrer et publier ». Chaque commerçant modifie lui-même son statut, ses horaires et ses prix avec son lien privé ; ses changements sont intégrés ici à l’enregistrement.',
+        tooBig: function (n) { return 'La page (' + n + ' commerces) dépasse 15 Mo, la limite de publication. Supprimez des commerces ou déplacez les données vers une base externe.'; },
+        tokTitle: 'Lien de modification du commerçant',
+        tokHint: 'Envoyez ce lien uniquement au commerçant. Il s’affiche une seule fois après « Enregistrer et publier » et ne peut pas être récupéré.',
+        tokCopy: 'Copier le lien', tokMake: 'Générer un lien de modification', tokRegen: 'Générer un nouveau lien (révoque l’ancien)',
+        tokHave: 'Ce commerce a un lien de modification actif. Il ne peut plus être affiché, mais vous pouvez en générer un nouveau qui révoque l’ancien.',
+        tokNone: 'Aucun lien de modification pour ce commerce.',
+        tokAll: 'Générer des liens pour tous les commerces sans lien',
+        tokAllDone: function (n) { return n + ' liens générés. Cliquez sur « Enregistrer et publier » pour les valider.'; },
+        baseLbl: 'Lien public de votre page (sert à construire chaque lien)', baseNeed: 'Saisissez d’abord le lien public de la page pour voir les liens de modification.',
+        find: 'Rechercher le commerce à modifier', none: 'Aucun commerce correspondant.',
+        more: function (n) { return 'Afficher plus (' + n + ')'; },
+        name: 'Nom du commerce', owner: 'Nom du propriétaire', phone: 'Numéro de téléphone', wilaya: 'Wilaya', pickW: 'Choisir la wilaya', daira: 'Daïra', baladiya: 'Commune',
+        address: 'Adresse (rue, quartier ou point de repère)', map: 'Lien vers la carte (facultatif)', open: 'Ouvre à', close: 'Ferme à',
+        off: 'Jours de congé hebdomadaires', paused: 'Fermé temporairement (congé ou imprévu)',
+        del: 'Supprimer le commerce', delYes: 'Confirmer la suppression', delNo: 'Retour', add: '+ Ajouter un commerce', save: 'Enregistrer et publier', cancel: 'Annuler',
+        shop: function (i) { return 'Commerce ' + i; },
+        errName: function (i) { return 'Saisissez le nom du commerce n° ' + i + '.'; },
+        errMap: function (n) { return 'Le lien de la carte de « ' + n + ' » n’est pas accepté. Il doit commencer par https:// et venir de Google Maps, OpenStreetMap, Waze, Apple Plans ou Bing.'; },
+        errPhone: function (n) { return 'Le numéro de « ' + n + ' » est invalide. Utilisez uniquement des chiffres et des espaces.'; },
+        errTime: function (n) { return 'Indiquez l’heure d’ouverture et de fermeture de « ' + n + ' ».'; },
+        saving: 'Enregistrement…', saved: 'Enregistré.',
+        conflict: 'Une version plus récente a été publiée. Elle va se charger, puis refaites votre modification.',
+        noRight: 'Vous n’avez pas le droit de modifier cette page.', rate: 'Trop de tentatives. Patientez puis réessayez.', fail: 'Échec de l’enregistrement. Réessayez.'
+      }
+    }
+  };
+
+  var TITLE = 'ما تشقاش Matchqach';
+  var RESET = ':root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}';
+  var FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@500;600;700&display=swap">';
+
+  var app = document.getElementById('app');
+  var cssEl = document.getElementById('page-css');
+  var jsEl = document.getElementById('app-js');
+  var data;
+  try { data = JSON.parse(document.getElementById('shop-data').textContent); } catch (e) { data = { demo: false, shops: [] }; }
+
+  /* ---------- input hardening: every shop field is normalised on load and again before saving ---------- */
+  var CTRL = /[\u0000-\u001f\u007f\u061c\u200b-\u200f\u202a-\u202e\u2060-\u2069\ufeff]/g;
+  function txt(v, max) { return String(v == null ? '' : v).replace(CTRL, ' ').replace(/\s+/g, ' ').trim().slice(0, max); }
+  function safeTime(v, dflt) { return /^([01]\d|2[0-3]):[0-5]\d$/.test(String(v)) ? String(v) : dflt; }
+  function safeUrl(v) {
+    var u = String(v == null ? '' : v).trim();
+    if (!u || u.length > 500) return '';
+    try {
+      var p = new URL(u);
+      if ((p.protocol !== 'https:' && p.protocol !== 'http:') || p.username || p.password) return '';
+      return p.href;
+    } catch (e) { return ''; }
+  }
+  function safeWa(v) {
+    var d = String(v == null ? '' : v).replace(/[^\d+]/g, '');
+    if (d.indexOf('+') > 0) return '';
+    d = d.replace(/^\+/, '');
+    if (d.indexOf('00') === 0) d = d.slice(2);
+    else if (d.charAt(0) === '0') d = '213' + d.slice(1);
+    return /^[1-9]\d{8,14}$/.test(d) ? d : '';
+  }
+  function ml(v, max) {
+    return String(v == null ? '' : v).replace(/\r/g, '').replace(/[\u0000-\u0009\u000b-\u001f\u007f؜​-‏‪-‮⁠-⁩﻿]/g, ' ').replace(/[ \t]+/g, ' ').replace(/ ?\n ?/g, '\n').replace(/\n{3,}/g, '\n\n').trim().slice(0, max);
+  }
+  function safeHttps(v) { var u = safeUrl(v); return /^https:\/\//i.test(u) ? u : ''; }
+  /* map links: https only and only well-known map providers (blocks look-alike and redirect hosts) */
+  var MAP_HOSTS = ['maps.google.com', 'www.google.com', 'google.com', 'www.google.dz', 'google.dz', 'maps.app.goo.gl', 'goo.gl', 'www.openstreetmap.org', 'openstreetmap.org', 'osm.org', 'www.waze.com', 'waze.com', 'ul.waze.com', 'maps.apple.com', 'www.bing.com', 'bing.com'];
+  function safeMapUrl(v) {
+    var u = safeHttps(v);
+    if (!u) return '';
+    try {
+      var p = new URL(u), h = p.hostname.toLowerCase();
+      if (MAP_HOSTS.indexOf(h) < 0 || (p.port && p.port !== '443')) return '';
+      if ((h.indexOf('google.') > -1 || h === 'goo.gl' || h.indexOf('bing.') > -1) && h !== 'maps.google.com' && p.pathname.indexOf('/maps') !== 0) return '';
+      return p.href;
+    } catch (e) { return ''; }
+  }
+  function safePhone(v) {
+    var p = txt(v, 20);
+    if (!/^\+?[0-9 ().-]{5,19}$/.test(p)) return '';
+    var n = p.replace(/\D/g, '').length;
+    return n >= 6 && n <= 15 ? p : '';
+  }
+  var MAX_SHOPS = 500000;
+  function cleanPub(p) {
+    var ok = function (v) { return typeof v === 'string' && /^[A-Za-z0-9_-]{43}$/.test(v); };
+    return p && typeof p === 'object' && ok(p.x) && ok(p.y) ? { x: p.x, y: p.y } : null;
+  }
+  function cleanShop(s) {
+    if (!s || typeof s !== 'object') return null;
+    var name = txt(s.name, 80);
+    if (!name) return null;
+    var sm = [60, 120, 180].indexOf(s.soonMins) > -1 ? s.soonMins : 0;
+    var mn = ['open', 'closed', 'break', 'soon'].indexOf(s.manual) > -1 ? s.manual : 'auto';
+    if (mn === 'soon' && !sm) mn = 'auto';
+    var offs = Array.isArray(s.offDays) ? s.offDays.filter(function (d, i, a) { return d === (d | 0) && d >= 0 && d <= 6 && a.indexOf(d) === i; }) : [];
+    return {
+      id: (function (i) { i = txt(i, 40).replace(/[^A-Za-z0-9_-]/g, ''); return validId(i) ? i : newId(); })(s.id),
+      name: name, owner: txt(s.owner, 80), phone: safePhone(s.phone),
+      address: txt(s.address, 160),
+      wilaya: WILAYAS.indexOf(s.wilaya) > -1 ? s.wilaya : '',
+      daira: txt(s.daira, 60), baladiya: txt(s.baladiya, 60),
+      map: safeMapUrl(s.map),
+      cat: Object.prototype.hasOwnProperty.call(CATMAP, s.cat) ? s.cat : '',
+      wa: safeWa(s.wa), kind: ['service', 'shop', 'product', 'goods'].indexOf(s.kind) > -1 ? s.kind : 'shop',
+      prices: ml(s.prices, 300), note: txt(s.note, 150),
+      manual: mn, soonMins: sm,
+      statusAt: (typeof s.statusAt === 'number' && isFinite(s.statusAt) && s.statusAt > 0) ? Math.min(Math.floor(s.statusAt), Date.now()) : 0,
+      open: safeTime(s.open, '08:00'), close: safeTime(s.close, '20:00'),
+      offDays: offs.sort(), paused: s.paused === true,
+      pub: cleanPub(s.pub),
+      baseAt: (typeof s.baseAt === 'number' && isFinite(s.baseAt) && s.baseAt > 0) ? Math.floor(s.baseAt) : 0
+    };
+  }
+  if (!data || !Array.isArray(data.shops)) data = { demo: false, shops: [] };
+  var siteBase = safeHttps(data.base);
+  data = { demo: data.demo === true, base: siteBase, shops: data.shops.slice(0, MAX_SHOPS).map(cleanShop).filter(Boolean) };
+
+  var lang = 'ar';
+  try { var saved = localStorage.getItem('mq-lang'); if (saved === 'fr' || saved === 'ar') lang = saved; } catch (e) { /* no storage */ }
+  var L = LANGS[lang];
+
+  var view = 'board', filter = 'all', query = '', wfilter = '', cfilter = '', kfilter = '';
+  /* Browser storage keeps only harmless preferences. Owner tokens are never written to localStorage;
+     the one-time list of new links lives in sessionStorage for at most 30 minutes (see readLinks). */
+  var STORE_OK = { 'mq-lang': 1, 'mq-rates': 1, 'mq-w': 1 };
+  function store(k, v) {
+    if (!STORE_OK[k] || /[A-Za-z0-9_-]{43}/.test(String(v))) return;
+    try { localStorage.setItem(k, String(v)); } catch (e) { /* no storage */ }
+  }
+  function readLinks() {
+    var o = null, out = [];
+    try { o = JSON.parse(sessionStorage.getItem('mq-links') || 'null'); } catch (e) { o = null; }
+    if (!o || typeof o.t !== 'number' || Date.now() - o.t > 1800000 || !Array.isArray(o.l)) {
+      try { sessionStorage.removeItem('mq-links'); } catch (e) { /* no storage */ }
+      return out;
+    }
+    return o.l.slice(0, 5000);
+  }
+  var canEdit = false, artifactNS = null, draft = [], rates = dict();
+  try {
+    var rr = JSON.parse(localStorage.getItem('mq-rates') || '{}') || {};
+    Object.keys(rr).slice(0, 5000).forEach(function (k) { var n = rr[k] | 0; if (validId(k) && n >= 1 && n <= 5) rates[k] = n; });
+  } catch (e) { /* ignore */ }
+
+  /* the one HTML escaper: every user value reaches innerHTML only through this (text and quoted attributes) */
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"'`]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;', '`': '&#96;' }[c];
+    });
+  }
+  function dict() { return Object.create(null); }
+  function validId(id) { return typeof id === 'string' && /^[A-Za-z0-9_-]{1,40}$/.test(id) && id !== '__proto__' && id !== 'constructor' && id !== 'prototype'; }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function toMin(t) { var a = String(t || '').split(':'); return (parseInt(a[0], 10) || 0) * 60 + (parseInt(a[1], 10) || 0); }
+  function hhmm(min) { min = ((min % 1440) + 1440) % 1440; return pad(Math.floor(min / 60)) + ':' + pad(min % 60); }
+  function wname(w) { var i = WILAYAS.indexOf(w); return i > -1 ? L.wil[i] : w; }
+
+  function applyLang() {
+    L = LANGS[lang];
+    app.setAttribute('dir', L.dir);
+    app.setAttribute('lang', L.code);
+    var tb = document.getElementById('toast');
+    tb.setAttribute('dir', L.dir);
+    tb.setAttribute('lang', L.code);
+  }
+
+  function algiersNow() {
+    try {
+      var f = new Intl.DateTimeFormat('en-US', { timeZone: 'Africa/Algiers', weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
+      var o = {};
+      f.formatToParts(new Date()).forEach(function (p) { o[p.type] = p.value; });
+      var h = parseInt(o.hour, 10) % 24, m = parseInt(o.minute, 10);
+      return { dow: WK[o.weekday], min: h * 60 + m, h: h, m: m };
+    } catch (e) {
+      var d = new Date(Date.now() + 3600000);
+      return { dow: d.getUTCDay(), min: d.getUTCHours() * 60 + d.getUTCMinutes(), h: d.getUTCHours(), m: d.getUTCMinutes() };
+    }
+  }
+
+  function status(s, now) {
+    if (s.paused) return { state: 'paused', rank: 3, mins: 0 };
+    if (s.manual === 'soon' && s.soonMins) {
+      var left = s.soonMins - Math.floor((Date.now() - s.statusAt) / 60000);
+      if (left > 0) return { state: 'soon', rank: 0.5, mins: left, manual: true };
+    } else if (s.manual && s.manual !== 'auto' && s.manual !== 'soon') {
+      if (Date.now() - s.statusAt > 43200000) return { state: 'unknown', rank: 2, mins: 0 };
+      if (s.manual === 'open') return { state: 'open', rank: 0, mins: 0, manual: true };
+      if (s.manual === 'break') return { state: 'break', rank: 2, mins: 0 };
+      return { state: 'closed', rank: 1, mins: 0, manual: true };
+    }
+    var o = toMin(s.open), c = toMin(s.close), m = now.min, d = now.dow;
+    var offs = s.offDays || [];
+    var off = function (x) { return offs.indexOf(((x % 7) + 7) % 7) > -1; };
+    var allDay = (o === c);
+    if (allDay) {
+      if (!off(d)) return { state: 'open', rank: 0, mins: 0, allDay: true };
+    } else if (o < c) {
+      if (!off(d) && m >= o && m < c) return { state: 'open', rank: 0, closeAt: c, mins: c - m };
+    } else {
+      if (!off(d) && m >= o) return { state: 'open', rank: 0, closeAt: c, mins: 1440 - m + c, nextDay: true };
+      if (!off(d - 1) && m < c) return { state: 'open', rank: 0, closeAt: c, mins: c - m };
+    }
+    var oo = allDay ? 0 : o;
+    for (var k = 0; k <= 7; k++) {
+      var day = (d + k) % 7;
+      if (off(day)) continue;
+      if (k === 0 && m >= oo) continue;
+      return { state: 'closed', rank: 1, openAt: oo, day: day, k: k, mins: k * 1440 + oo - m };
+    }
+    return { state: 'closed', rank: 2, never: true, mins: 0 };
+  }
+
+  function pillHtml(st) {
+    if (st.state === 'paused') return '<span class="pill pill-paused"><i></i>' + L.pausedPill + '</span>';
+    if (st.state === 'soon') return '<span class="pill pill-soon"><i></i>' + L.soonPill + '</span>';
+    if (st.state === 'break') return '<span class="pill pill-break"><i></i>' + L.breakPill + '</span>';
+    if (st.state === 'unknown') return '<span class="pill pill-unknown"><i></i>' + L.unknownPill + '</span>';
+    if (st.state === 'open') return '<span class="pill pill-open"><i></i>' + (lang === 'fr' ? 'Ouvert' : 'مفتوح') + '</span>';
+    return '<span class="pill pill-closed"><i></i>' + (lang === 'fr' ? 'Fermé' : 'مغلق') + '</span>';
+  }
+
+  function timeBody(st) {
+    if (st.state === 'paused') return '<p class="l1">' + L.pausedL1 + '</p><p class="l2">' + L.pausedL2 + '</p>';
+    if (st.state === 'soon') return '<p class="l1 num">' + L.soonL1(st.mins) + '</p><p class="l2">' + L.soonL2 + '</p>';
+    if (st.state === 'break') return '<p class="l1">' + L.breakL1 + '</p><p class="l2">' + L.breakL2 + '</p>';
+    if (st.state === 'unknown') return '<p class="l1">' + L.unknownL1 + '</p><p class="l2">' + L.unknownL2 + '</p>';
+    if (st.manual) return '<p class="l1">' + (st.state === 'open' ? L.manOpen : L.manClosed) + '</p>';
+    if (st.state === 'open') {
+      if (st.allDay) return '<p class="l1">' + L.allDay + '</p>';
+      return '<p class="l1 num">' + L.closesAt(hhmm(st.closeAt), st.nextDay) + '</p><p class="l2">' + L.dur(st.mins) + '</p>';
+    }
+    if (st.never) return '<p class="l1">' + L.never + '</p>';
+    return '<p class="l1 num">' + L.opensAt(st.k, st.day, hhmm(st.openAt), L.days) + '</p>' + (st.mins < 1440 ? '<p class="l2">' + L.dur(st.mins) + '</p>' : '');
+  }
+
+  function hoursText(s) {
+    var offs = (s.offDays || []).slice().sort();
+    return L.hours(toMin(s.open) === toMin(s.close), hhmm(toMin(s.open)), hhmm(toMin(s.close)), offs.map(function (d) { return L.days[d]; }));
+  }
+
+  function locHtml(s) {
+    var adm = [];
+    if (s.baladiya) adm.push(L.baladiya(s.baladiya));
+    if (s.daira) adm.push(L.daira(s.daira));
+    if (s.wilaya) adm.push(L.wilaya(wname(s.wilaya)));
+    if (!s.address && !adm.length && !s.map) return '';
+    return '<div class="blk"><span class="lbl">' + L.place + '</span>' +
+      (s.address ? '<span class="addr l1">' + esc(s.address) + '</span>' : '') +
+      (adm.length ? '<span class="adm">' + esc(adm.join(' · ')) + '</span>' : '') +
+      (safeMapUrl(s.map) ? '<a class="maplink" href="' + esc(safeMapUrl(s.map)) + '" target="_blank" rel="noopener noreferrer">' + L.map + '</a>' : '') +
+      '</div>';
+  }
+
+  function bookHtml(s) {
+    var num = s.wa;
+    if (!num) return '';
+    var id = esc(s.id);
+    return '<details class="dt"><summary>' + L.bookBtn + '</summary><div class="bk" data-wa="' + esc(num) + '" data-shop="' + esc(s.name) + '">' +
+      '<div class="field"><label for="bkn-' + id + '">' + L.bookName + '</label><input type="text" id="bkn-' + id + '" data-bkf="name" maxlength="60" autocomplete="name"></div>' +
+      '<div class="field"><label for="bkd-' + id + '">' + L.bookDate + '</label><input type="date" id="bkd-' + id + '" data-bkf="date"></div>' +
+      '<div class="field"><label for="bkt-' + id + '">' + L.bookTime + '</label><input type="time" id="bkt-' + id + '" data-bkf="time"></div>' +
+      '<a class="wabtn bk-send" target="_blank" rel="noopener noreferrer" href="https://wa.me/' + esc(num) + '">' + L.bookSend + '</a>' +
+      '<p class="hint">' + L.bookHint + '</p></div></details>';
+  }
+  function updateBook(bk) {
+    var g = function (k) { var i = bk.querySelector('[data-bkf="' + k + '"]'); return i ? txt(i.value, 60) : ''; };
+    var a = bk.querySelector('.bk-send');
+    if (a) a.href = 'https://wa.me/' + bk.getAttribute('data-wa') + '?text=' + encodeURIComponent(L.bookMsg(bk.getAttribute('data-shop'), g('name'), g('date'), g('time')));
+  }
+  function renderClock(now) {
+    var set = function (id, t) { var e = document.getElementById(id); if (e) e.textContent = t; };
+    set('clock', pad(now.h) + ':' + pad(now.m));
+    var d = new Date(), g = '', h = '';
+    try {
+      g = new Intl.DateTimeFormat((lang === 'fr' ? 'fr-FR' : 'ar-DZ') + '-u-nu-latn', { timeZone: 'Africa/Algiers', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(d);
+      h = new Intl.DateTimeFormat((lang === 'fr' ? 'fr-FR' : 'ar') + '-u-ca-islamic-umalqura-nu-latn', { timeZone: 'Africa/Algiers', day: 'numeric', month: 'long', year: 'numeric' }).format(d);
+    } catch (e) { g = L.days[now.dow]; }
+    set('cdate', g);
+    set('chijri', h);
+  }
+
+  function shopHtml(x) {
+    var s = x.s, st = x.st;
+    var tel = String(s.phone || '').replace(/[^\d+]/g, '');
+    return '<article class="shop" data-state="' + st.state + '">' +
+      '<div class="s-head"><div class="s-title"><h2 class="name">' + esc(s.name) + '</h2>' +
+      '<p class="owner"><span class="lbl">' + L.owner + '</span>' + esc(s.owner || '—') + '</p>' +
+      '<div class="tags"><span class="tag tag-kind">' + esc(L.kind1[s.kind] || '') + '</span>' + (s.cat ? '<span class="tag">' + esc(catName(s.cat)) + '</span>' : '') + '</div>' +
+      '</div>' + pillHtml(st) + '</div>' +
+      '<div class="s-info"><div class="blk"><span class="lbl">' + L.time + '</span>' + timeBody(st) + '<p class="hrs num">' + esc(hoursText(s)) + '</p></div>' + locHtml(s) + '</div>' +
+      (s.phone || s.wa ? '<div class="s-call">' +
+        (s.phone ? '<a class="tel" dir="ltr" href="tel:' + esc(tel) + '">' + esc(s.phone) + '</a><a class="callbtn" href="tel:' + esc(tel) + '">' + L.call + '</a>' : '') +
+        (s.wa ? '<a class="wabtn" href="https://wa.me/' + esc(s.wa) + '" target="_blank" rel="noopener noreferrer">' + L.wa + '</a>' : '') +
+        (s.phone ? '<button type="button" class="btn" data-copy="' + esc(s.phone) + '">' + L.copy + '</button>' : '') +
+        '</div>' : '') +
+      (s.prices ? '<details class="dt"><summary>' + L.pricesBtn + '</summary><p class="prices">' + esc(s.prices) + '</p></details>' : '') +
+      bookHtml(s) +
+      (s.note ? '<div class="blk note"><span class="lbl">' + L.noteLbl + '</span><p>' + esc(s.note) + '</p></div>' : '') +
+      '<div class="rate"><span>' + L.rateLbl + '</span><div class="stars" role="group" aria-label="' + esc(L.rateLbl) + '">' +
+        [1, 2, 3, 4, 5].map(function (n) {
+          return '<button type="button" class="star' + (n <= (rates[s.id] || 0) ? ' on' : '') + '" data-rate-id="' + esc(s.id) + '" data-rate="' + n + '" aria-label="' + esc(L.rateAria(n)) + '" aria-pressed="' + (n === rates[s.id]) + '">★</button>';
+        }).join('') + '</div></div>' +
+      '</article>';
+  }
+
+  function flagSvg() {
+    return '<svg class="flag" viewBox="0 0 60 40" role="img" aria-label="' + esc(L.flagAlt) + '">' +
+      '<defs><mask id="flagcut"><rect width="60" height="40" fill="#fff"/><circle cx="33" cy="20" r="9" fill="#000"/></mask></defs>' +
+      '<rect width="30" height="40" fill="#006233"/><rect x="30" width="30" height="40" fill="#fff"/>' +
+      '<circle cx="30" cy="20" r="11" fill="#d21034" mask="url(#flagcut)"/>' +
+      '<polygon fill="#d21034" points="35.5,15 36.676,18.382 40.255,18.455 37.402,20.618 38.439,24.045 35.5,22 32.561,24.045 33.598,20.618 30.745,18.455 34.324,18.382"/></svg>';
+  }
+
+  function renderBoardShell() {
+    view = 'board';
+    shown = PAGE; lastList = '';
+    applyLang();
+    app.innerHTML =
+      '<div class="wrap">' +
+      '<header class="hero"><div class="hero-top"><p class="brand">' + flagSvg() + '<span>ما تشقاش</span><span class="b-en" dir="ltr">Matchqach</span></p>' +
+      '<div class="lang" role="group" aria-label="اللغة / Langue">' +
+      '<button type="button" data-lang="ar" lang="ar" aria-pressed="' + (lang === 'ar') + '">العربية</button>' +
+      '<button type="button" data-lang="fr" lang="fr" aria-pressed="' + (lang === 'fr') + '">Français</button></div></div>' +
+      '<h1>' + L.h1 + '</h1><p class="sub">' + L.sub + '</p>' +
+      '<div class="ticker" role="marquee" aria-label="' + esc(L.ticker) + '"><div class="ticker-track" dir="ltr">' +
+      '<span dir="' + L.dir + '" lang="' + L.code + '">' + esc(L.ticker) + '</span><span dir="' + L.dir + '" lang="' + L.code + '" aria-hidden="true">' + esc(L.ticker) + '</span></div></div>' +
+      '<div class="hero-bottom"><div class="clock"><div class="time" id="clock"></div><div class="date" id="cdate"></div><div class="date hijri" id="chijri"></div></div></div></header>' +
+      (data.demo ? '<p class="notice">' + L.demo + '</p>' : '') +
+      regHtml() +
+      '<div class="kinds" role="group" aria-label="' + esc(L.kindsLabel) + '">' + ['service', 'shop', 'product', 'goods'].map(function (k) {
+        return '<button type="button" class="kind" data-kind="' + k + '" id="k-' + k + '" aria-pressed="false"><span class="kn" id="kn-' + k + '">0</span><span class="kl">' + L.kinds[k] + '</span></button>';
+      }).join('') + '</div>' +
+      '<div class="controls"><div class="seg" role="group" aria-label="' + esc(L.filterLabel) + '">' +
+      '<button type="button" class="chip" data-filter="all" id="f-all"></button>' +
+      '<button type="button" class="chip" data-filter="open" id="f-open"></button>' +
+      '<button type="button" class="chip" data-filter="closed" id="f-closed"></button></div>' +
+      '<select class="sel" id="csel" aria-label="' + esc(L.catLabel) + '"></select>' +
+      '<select class="sel" id="wsel" aria-label="' + esc(L.wLabel) + '"></select>' +
+      '<input class="search" id="q" type="search" placeholder="' + esc(L.search) + '" aria-label="' + esc(L.searchLabel) + '" value="' + esc(query) + '"></div>' +
+      '<div id="newlinks"></div>' +
+      '<p class="notice" id="loadst" role="status" hidden></p>' +
+      '<div class="cards" id="list"></div>' +
+      '<button type="button" class="btn more" id="more" data-act="more" hidden></button>' +
+      '<details class="dt ownbox" id="ownbox"' + (document.getElementById('ownmsg') ? ' open' : '') + '><summary>' + L.ownSummary + '</summary>' +
+      '<div class="own-row"><input id="ownin" type="text" dir="ltr" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="' + esc(L.ownLabel) + '" placeholder="' + esc(L.ownLabel) + '"><button type="button" class="btn btn-primary" data-act="ownergo">' + L.ownGo + '</button></div>' +
+      '<p class="msg err" id="ownmsg" aria-live="polite"></p></details>' +
+      '<section class="thanks"><strong>' + flagSvg() + 'شكراً لزيارتكم · Merci de votre visite</strong><p lang="ar" dir="rtl">' + L.thanksAr + '</p><p class="fr" lang="fr" dir="ltr">' + L.thanksFr + '</p></section>' +
+      '<footer class="foot"><span class="tip"><i class="lamp"></i>' + L.tip + '</span><span id="manage"></span></footer>' +
+      '</div>';
+    paintFab();
+    showNewLinks();
+    if (canEdit) showManage();
+    updateBoard();
+  }
+
+  function showManage() {
+    var el = document.getElementById('manage');
+    if (el && view === 'board') el.innerHTML = '<button type="button" class="btn" data-act="edit">' + L.manage + '</button>';
+  }
+
+  /* ======================================================================
+     Private edit links (ECDSA P-256).
+     The shop record holds only a PUBLIC key. The token in the link is the
+     matching private scalar and is shown once to the site owner. An owner's
+     change is a signed message; every visitor's browser checks the signature
+     against the shop's public key and ignores anything that does not verify.
+     ====================================================================== */
+  var subtle = window.crypto && window.crypto.subtle;
+  var ALG = { name: 'ECDSA', namedCurve: 'P-256' }, SIG = { name: 'ECDSA', hash: 'SHA-256' };
+  var enc = new TextEncoder();
+  function b64u(buf) {
+    var b = new Uint8Array(buf), s = '';
+    for (var i = 0; i < b.length; i++) s += String.fromCharCode(b[i]);
+    return btoa(s).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  }
+  function unb64u(s) {
+    s = String(s).replace(/-/g, '+').replace(/_/g, '/');
+    while (s.length % 4) s += '=';
+    var r = atob(s), a = new Uint8Array(r.length);
+    for (var i = 0; i < r.length; i++) a[i] = r.charCodeAt(i);
+    return a;
+  }
+  async function newKeys() {
+    var kp = await subtle.generateKey(ALG, true, ['sign', 'verify']);
+    var j = await subtle.exportKey('jwk', kp.privateKey);
+    return { token: j.d, pub: { x: j.x, y: j.y } };
+  }
+  function pubJwk(p) { return { kty: 'EC', crv: 'P-256', x: p.x, y: p.y, ext: true }; }
+  async function signText(token, p, text) {
+    var j = pubJwk(p); j.d = token;
+    var k = await subtle.importKey('jwk', j, ALG, false, ['sign']);
+    return b64u(await subtle.sign(SIG, k, enc.encode(text)));
+  }
+  async function verifyText(p, text, sig) {
+    try {
+      var k = await subtle.importKey('jwk', pubJwk(p), ALG, false, ['verify']);
+      return await subtle.verify(SIG, k, unb64u(sig), enc.encode(text));
+    } catch (e) { return false; }
+  }
+  async function tokenMatches(shop, token) {
+    if (!subtle || !shop || !shop.pub || !/^[A-Za-z0-9_-]{43}$/.test(String(token))) return false;
+    try {
+      var probe = 'probe:' + shop.id + ':' + Date.now();
+      return await verifyText(shop.pub, probe, await signText(token, shop.pub, probe));
+    } catch (e) { return false; }
+  }
+  function linkBase() {
+    var v = siteBase;
+    if (!v) { var h = String(location.href).split('#')[0].split('?')[0]; v = /^https?:/i.test(h) ? h : ''; }
+    return v;
+  }
+  /* ?edit=ID&token=TOKEN is the standard form. The #edit.ID.TOKEN tail makes the same link work where the
+     address query is not passed to the page (for example inside the Claude viewer). */
+  function ownerLink(id, token) {
+    var b = linkBase();
+    if (!b) return '';
+    return b + '?edit=' + encodeURIComponent(id) + '&token=' + token + '#edit.' + id + '.' + token;
+  }
+  function parseOwnerLink(str) {
+    str = String(str || '').trim();
+    var a = /[?&]edit=([A-Za-z0-9_-]+)/.exec(str), t = /[?&]token=([A-Za-z0-9_-]+)/.exec(str);
+    if (a && t) return { id: a[1], token: t[1] };
+    var h = /edit\.([A-Za-z0-9_-]+)\.([A-Za-z0-9_-]{43})(?![A-Za-z0-9_-])/.exec(str);
+    return h ? { id: h[1], token: h[2] } : null;
+  }
+
+  /* ======================================================================
+     Storage adapter. watchOverrides() and saveOverride() are the only code
+     that touches the database; swap them to move to another backend.
+     ====================================================================== */
+  var emb = data.shops.slice(), ext = [], base = emb.slice(), baseById = dict(), embIds = dict(), ovRaw = dict();
+  emb.forEach(function (s) { embIds[s.id] = 1; });
+  base.forEach(function (s) { baseById[s.id] = s; });
+  /* shops loaded from the per-wilaya files replace the previous wilaya's shops; embedded shops always stay */
+  var regList = [];
+  function recompute() {
+    base = emb.concat(regList, ext);
+    baseById = dict();
+    base.forEach(function (s) { baseById[s.id] = s; });
+    var jobs = [];
+    regList.concat(ext).forEach(function (s) { var l = ovRaw[s.id]; if (l) l.forEach(function (d) { jobs.push(acceptOverride(s.id, d)); }); });
+    return Promise.all(jobs).then(rebuild);
+  }
+  function setExt(rows) { ext = rows; return recompute(); }
+  function setReg(rows) { regList = rows; return recompute(); }
+  var dbNS = null, uid = null, ovOk = dict(), ovSig = dict(), ovUnsub = null, ovResolve = null, ovChain = Promise.resolve();
+  var ovFirst = new Promise(function (r) { ovResolve = r; });
+  var OVF = ['open', 'close', 'offDays', 'paused', 'manual', 'soonMins', 'statusAt', 'prices', 'note', 'phone', 'wa', 'address', 'map'];
+
+  function merged() {
+    return base.map(function (s) {
+      var o = ovOk[s.id];
+      if (!o || o.at <= (s.baseAt || 0)) return s;
+      var m = {}, k;
+      for (k in s) m[k] = s[k];
+      OVF.forEach(function (f) { if (Object.prototype.hasOwnProperty.call(o.f, f)) m[f] = o.f[f]; });
+      return cleanShop(m) || s;
+    });
+  }
+  function rebuild() { data.shops = merged(); reindex(); }
+
+  /* an override is accepted only if it carries a valid signature from the shop's key */
+  async function acceptOverride(id, doc) {
+    var s = validId(id) ? baseById[id] : null;
+    if (!s || !s.pub || !doc || typeof doc.payload !== 'string' || typeof doc.sig !== 'string' || doc.sig.length > 120 || doc.payload.length > 4000) return;
+    if (ovSig[doc.sig]) return;
+    ovSig[doc.sig] = 1;
+    var p;
+    try { p = JSON.parse(doc.payload); } catch (e) { return; }
+    if (!p || p.id !== id || typeof p.at !== 'number' || !isFinite(p.at) || p.at > Date.now() + 3600000 || !p.f || typeof p.f !== 'object') return;
+    if (ovOk[id] && p.at <= ovOk[id].at) return;
+    if (!(await verifyText(s.pub, doc.payload, doc.sig))) return;
+    if (ovOk[id] && p.at <= ovOk[id].at) return;
+    ovOk[id] = { at: p.at, f: p.f };
+  }
+
+  /* each signed-in writer owns one document "ov/<uid>" holding {items: {shopId: {payload, sig}}};
+     nobody can overwrite another writer's document, and every update touches one small record */
+  function watchOverrides() {
+    if (!dbNS || ovUnsub) return;
+    var done = function () { if (ovResolve) { ovResolve(); ovResolve = null; } };
+    try {
+      ovUnsub = dbNS.collection('ov').onSnapshot(function (snap) {
+        var jobs = [];
+        snap.docs.forEach(function (d) {
+          var b = d.data(), it = b && b.items;
+          if (!it || typeof it !== 'object') return;
+          Object.keys(it).slice(0, 100).forEach(function (id) {
+            if (!validId(id)) return;
+            var d = it[id], l = ovRaw[id] || (ovRaw[id] = []);
+            if (d && typeof d.sig === 'string' && !l.some(function (x) { return x.sig === d.sig; })) { l.push(d); if (l.length > 4) l.shift(); }
+            jobs.push(acceptOverride(id, d));
+          });
+        });
+        Promise.all(jobs).then(function () {
+          rebuild();
+          if (view === 'board') updateBoard();
+          done();
+        });
+      }, done);
+    } catch (e) { done(); }
+  }
+
+  function saveOverride(shop, token, clean) {
+    var run = async function () {
+      var f = {};
+      OVF.forEach(function (k) { f[k] = clean[k]; });
+      var payload = JSON.stringify({ id: shop.id, at: Date.now(), f: f });
+      var sig = await signText(token, shop.pub, payload);
+      var ref = dbNS.doc('ov/' + uid), cur = await ref.get();
+      var items = (cur.exists && cur.data() && cur.data().items) || {}, keys = Object.keys(items);
+      if (keys.length > 100 && !items[shop.id]) delete items[keys[0]];
+      items[shop.id] = { payload: payload, sig: sig };
+      await ref.set({ items: items });
+      await acceptOverride(shop.id, { payload: payload, sig: sig });
+      rebuild();
+    };
+    ovChain = ovChain.then(run, run);
+    return ovChain;
+  }
+
+  /* ======================================================================
+     Index and board rendering (built for thousands of shops):
+     search text and filter sets are computed once per data change, the list
+     is paged, and the DOM is only touched when the markup really changed.
+     ====================================================================== */
+  var PAGE = 30, shown = PAGE, lastList = '';
+  var HAY = dict(), IDX = { w: dict(), c: dict(), k: {}, v: 0 };
+  var owner = null, od = {}, edQ = '', edLimit = 20, qTimer = 0;
+
+  function reindex() {
+    var w = dict(), c = dict(), k = { service: 0, shop: 0, product: 0, goods: 0 };
+    HAY = dict();
+    data.shops.forEach(function (s) {
+      if (s.wilaya) w[s.wilaya] = 1;
+      if (s.cat) c[s.cat] = 1;
+      k[s.kind] = (k[s.kind] || 0) + 1;
+      var wi = WILAYAS.indexOf(s.wilaya), cm = CATMAP[s.cat];
+      HAY[s.id] = [s.name, s.owner, s.phone, s.address, s.baladiya, s.daira, s.wilaya, wi > -1 ? WILAYAS_FR[wi] : '', cm ? cm.ar + ' ' + cm.fr : ''].join(' ').toLowerCase();
+    });
+    IDX.w = w; IDX.c = c; IDX.k = k; IDX.v++;
+  }
+  reindex();
+
+  function shopById(id) {
+    for (var i = 0; i < data.shops.length; i++) if (data.shops[i].id === id) return data.shops[i];
+    return null;
+  }
+
+  function updateBoard() {
+    if (view !== 'board') return;
+    var now = algiersNow();
+    var set = function (id, t) { var e = document.getElementById(id); if (e && e.textContent !== t) e.textContent = t; };
+    renderClock(now);
+    var all = data.shops.map(function (s) { return { s: s, st: status(s, now) }; });
+    var openN = 0;
+    all.forEach(function (x) { if (x.st.state === 'open') openN++; });
+    ['service', 'shop', 'product', 'goods'].forEach(function (k) {
+      set('kn-' + k, String(IDX.k[k] || 0));
+      var kb = document.getElementById('k-' + k);
+      if (kb) kb.setAttribute('aria-pressed', String(kfilter === k));
+    });
+    set('f-all', L.all + ' (' + all.length + ')');
+    set('f-open', L.open + ' (' + openN + ')');
+    set('f-closed', L.closed + ' (' + (all.length - openN) + ')');
+    ['all', 'open', 'closed'].forEach(function (f) {
+      var b = document.getElementById('f-' + f);
+      if (b) b.setAttribute('aria-pressed', String(filter === f));
+    });
+    var sel = document.getElementById('wsel');
+    if (sel) {
+      var present = SHARD.on ? WILAYAS.filter(function (w, i) { return SHARD.idx.w[String(i + 1)]; }) : WILAYAS.filter(function (w) { return IDX.w[w]; });
+      if (wfilter && present.indexOf(wfilter) < 0) wfilter = '';
+      var sig = lang + ':' + SHARD.on + ':' + present.join('|');
+      if (sel.getAttribute('data-sig') !== sig) {
+        sel.innerHTML = '<option value="">' + esc(SHARD.on ? L.pickWil : L.allW) + '</option>' + present.map(function (w) {
+          var m = SHARD.on ? SHARD.idx.w[String(WILAYAS.indexOf(w) + 1)] : null;
+          return '<option value="' + esc(w) + '">' + esc(wname(w)) + (m ? ' (' + m.n + ')' : '') + '</option>';
+        }).join('');
+        sel.setAttribute('data-sig', sig);
+      }
+      sel.value = wfilter;
+      sel.hidden = present.length === 0;
+    }
+    var csel = document.getElementById('csel');
+    if (csel) {
+      if (cfilter && !IDX.c[cfilter]) cfilter = '';
+      var csig = lang + ':' + Object.keys(IDX.c).sort().join('|');
+      if (csel.getAttribute('data-sig') !== csig) {
+        csel.innerHTML = '<option value="">' + esc(L.catAll) + '</option>' + catOptions('', IDX.c);
+        csel.setAttribute('data-sig', csig);
+      }
+      csel.value = cfilter;
+      csel.hidden = !Object.keys(IDX.c).length;
+    }
+    var q = query.trim().toLowerCase();
+    var rows = all.filter(function (x) {
+      if (cfilter && x.s.cat !== cfilter) return false;
+      if (kfilter && x.s.kind !== kfilter) return false;
+      if (filter === 'open' && x.st.state !== 'open') return false;
+      if (filter === 'closed' && x.st.state === 'open') return false;
+      if (wfilter && x.s.wilaya !== wfilter) return false;
+      return !q || (HAY[x.s.id] || '').indexOf(q) > -1;
+    });
+    rows.sort(function (a, b) { return a.st.rank - b.st.rank || a.st.mins - b.st.mins; });
+    var list = document.getElementById('list');
+    if (!list) return;
+    var ls = document.getElementById('loadst');
+    if (ls) { ls.textContent = SHARD.msg || ''; ls.hidden = !SHARD.msg; }
+    var html = rows.length ? rows.slice(0, shown).map(shopHtml).join('') :
+      '<p class="empty">' + (SHARD.on && !wfilter ? L.pickWilMsg : all.length ? L.emptyF : L.empty0) + '</p>';
+    if (html !== lastList) { list.innerHTML = html; lastList = html; }
+    var mb = document.getElementById('more');
+    if (mb) { mb.hidden = rows.length <= shown; mb.textContent = L.more(rows.length - shown); }
+  }
+
+
+  /* ======================================================================
+     Large catalogues: shops are stored as small per-wilaya files (data/index.json,
+     data/w<code>-<part>.json, compact rows) written by make_shards.py. Only the
+     chosen wilaya is fetched, part by part, so the page stays light with
+     hundreds of thousands of shops. Without data/index.json nothing changes.
+     ====================================================================== */
+  var SHARD = { on: false, idx: null, tok: 0, msg: '' };
+  var KINDS = ['service', 'shop', 'product', 'goods'];
+  function rowShop(r, wil) {
+    if (!Array.isArray(r)) return null;
+    var off = [];
+    for (var d = 0; d < 7; d++) if ((r[15] | 0) & (1 << d)) off.push(d);
+    return cleanShop({
+      id: r[0], name: r[1], owner: r[2], phone: r[3], address: r[4], wilaya: wil, daira: r[5], baladiya: r[6], map: r[7], cat: r[8], wa: r[9],
+      kind: KINDS[r[10] | 0] || 'shop', prices: r[11], note: r[12], open: r[13], close: r[14], offDays: off, paused: r[16] === 1,
+      pub: r[17] && r[18] ? { x: r[17], y: r[18] } : null, baseAt: 0
+    });
+  }
+  async function fetchJson(path) {
+    var res = await fetch(path, { cache: 'no-cache' });
+    if (!res.ok) throw new Error('http ' + res.status);
+    return res.json();
+  }
+  async function loadIndex() {
+    try {
+      var ix = await fetchJson('data/index.json');
+      if (!ix || ix.v !== 1 || !ix.w || typeof ix.w !== 'object') return;
+      var w = dict();
+      Object.keys(ix.w).forEach(function (k) {
+        var m = ix.w[k], n = m && m.n | 0, p = m && m.parts | 0;
+        if (/^\d{1,2}$/.test(k) && +k >= 1 && +k <= WILAYAS.length && n > 0 && p > 0 && p <= 200) w[k] = { n: n, parts: p };
+      });
+      var ps = ix.ps | 0;
+      SHARD.idx = { v: 1, w: w, ps: ps >= 100 && ps <= 20000 ? ps : 5000 }; SHARD.on = true;
+    } catch (e) { SHARD.on = false; }
+  }
+  /* an owner link opens one shop: ids look like p<wilaya code>_<number>, so only the one part holding it is fetched */
+  async function fetchOne(id) {
+    var m = /^p(\d{1,2})_(\d{1,8})$/.exec(id);
+    if (!SHARD.on || !m || !SHARD.idx.w[String(+m[1])]) return null;
+    try {
+      var part = await fetchJson('data/w' + (+m[1]) + '-' + Math.floor(+m[2] / SHARD.idx.ps) + '.json');
+      if (!Array.isArray(part)) return null;
+      for (var i = 0; i < part.length; i++) {
+        if (part[i] && part[i][0] === id) {
+          var s = rowShop(part[i], WILAYAS[+m[1] - 1]);
+          if (s) await setExt(ext.concat([s]));
+          return s;
+        }
+      }
+    } catch (e) { /* not found */ }
+    return null;
+  }
+  async function selectWilaya(name) {
+    var tk = ++SHARD.tok;
+    SHARD.msg = '';
+    if (!SHARD.on || !name) { await setExt([]); lastList = ''; updateBoard(); return; }
+    var code = WILAYAS.indexOf(name) + 1, m = SHARD.idx.w[String(code)];
+    if (!m) { await setExt([]); updateBoard(); return; }
+    var rows = [];
+    await setExt([]);
+    for (var p = 0; p < m.parts; p++) {
+      SHARD.msg = L.loadingW(p + 1, m.parts);
+      updateBoard();
+      try {
+        var part = await fetchJson('data/w' + code + '-' + p + '.json');
+        if (tk !== SHARD.tok) return;
+        if (!Array.isArray(part)) throw new Error('bad part');
+        for (var i = 0; i < part.length; i++) { var s = rowShop(part[i], name); if (s) rows.push(s); }
+        await setExt(rows.slice());
+        lastList = '';
+      } catch (e) {
+        if (tk === SHARD.tok) { SHARD.msg = L.loadFailW; updateBoard(); }
+        return;
+      }
+    }
+    SHARD.msg = '';
+    updateBoard();
+  }
+
+  /* ======================================================================
+     Shop-owner view (opened by ?edit=ID&token=TOKEN or by pasting the link)
+     ====================================================================== */
+  async function startOwner(id, token) {
+    var s = shopById(id) || await fetchOne(id);
+    if (!(await tokenMatches(s, token))) return false;
+    owner = { id: id, token: token };
+    try { history.replaceState(null, '', String(location.pathname)); } catch (e) { /* not allowed here */ }
+    renderOwner();
+    return true;
+  }
+  function ownerMsg(t) {
+    var m = document.getElementById('ownmsg'), b = document.getElementById('ownbox');
+    if (m) m.textContent = t;
+    if (b && t) b.open = true;
+  }
+  async function openFromUrl() {
+    var p = parseOwnerLink(location.search) || parseOwnerLink(location.hash);
+    if (!p) return;
+    if (dbNS) await Promise.race([ovFirst, new Promise(function (r) { setTimeout(r, 4000); })]);
+    if (!(await startOwner(p.id, p.token))) ownerMsg(L.ownerBad);
+  }
+
+  function paintOwnerChips() {
+    var el = document.getElementById('ochips');
+    if (!el) return;
+    el.innerHTML = [['auto', L.ctlAuto, 0], ['open', L.ctlOpen, 0], ['soon', L.ctlSoon(1), 60], ['soon', L.ctlSoon(2), 120], ['soon', L.ctlSoon(3), 180], ['break', L.ctlBreak, 0], ['closed', L.ctlClosed, 0]].map(function (b) {
+      return '<button type="button" class="chip" data-ostat="' + b[0] + '" data-mins="' + b[2] + '" aria-pressed="' + ((od.manual || 'auto') === b[0] && (b[0] !== 'soon' || od.soonMins === b[2])) + '">' + b[1] + '</button>';
+    }).join('');
+  }
+  function updateOwnerStatus() {
+    var el = document.getElementById('ostatus'), s = owner && shopById(owner.id);
+    if (!el || !s) return;
+    var st = status(Object.assign({}, s, od), algiersNow());
+    el.innerHTML = pillHtml(st) + '<div class="ost-body">' + timeBody(st) + '</div>';
+  }
+  function renderOwner(keep) {
+    var s = owner && shopById(owner.id);
+    if (!s) { owner = null; renderBoardShell(); return; }
+    view = 'owner';
+    applyLang();
+    if (!keep) od = { open: s.open, close: s.close, offDays: (s.offDays || []).slice(), paused: s.paused, manual: s.manual, soonMins: s.soonMins, statusAt: s.statusAt, prices: s.prices, note: s.note, phone: s.phone, wa: s.wa, address: s.address, map: s.map };
+    var E = L.ed, O = L.own;
+    var days = L.days.map(function (n, di) {
+      return '<label class="day"><input type="checkbox" data-o="day" data-day="' + di + '"' + (od.offDays.indexOf(di) > -1 ? ' checked' : '') + '><span>' + n + '</span></label>';
+    }).join('');
+    var txtIn = function (f, label, type, extra) {
+      return '<div class="field"><label for="o-' + f + '">' + label + '</label><input type="' + type + '" id="o-' + f + '" data-o="' + f + '" ' + (extra || '') + ' value="' + esc(od[f]) + '"></div>';
+    };
+    app.innerHTML =
+      '<div class="wrap"><div class="bar"><h1>' + esc(O.title(s.name)) + '</h1>' +
+      '<div class="lang on-light" role="group" aria-label="اللغة / Langue">' +
+      '<button type="button" data-lang="ar" lang="ar" aria-pressed="' + (lang === 'ar') + '">العربية</button>' +
+      '<button type="button" data-lang="fr" lang="fr" aria-pressed="' + (lang === 'fr') + '">Français</button></div></div>' +
+      '<p class="hint">' + O.hint + '</p>' +
+      '<section class="edit-shop"><span class="legend">' + O.status + '</span>' +
+      '<div class="ostatus" id="ostatus"></div><div class="seg" id="ochips" role="group" aria-label="' + esc(L.ctlTitle) + '"></div></section>' +
+      '<section class="edit-shop"><div class="fields">' +
+      txtIn('open', E.open, 'time') + txtIn('close', E.close, 'time') +
+      '<div class="field span2"><span class="legend">' + E.off + '</span><div class="days">' + days + '</div></div>' +
+      '<div class="field span2"><label class="check"><input type="checkbox" data-o="paused"' + (od.paused ? ' checked' : '') + '><span>' + E.paused + '</span></label></div>' +
+      txtIn('phone', E.phone, 'tel', 'dir="ltr" maxlength="20" inputmode="tel"') + txtIn('wa', E.wa, 'tel', 'dir="ltr" maxlength="20" inputmode="tel"') +
+      '<div class="field span2"><label for="o-address">' + E.address + '</label><input type="text" id="o-address" data-o="address" maxlength="160" value="' + esc(od.address) + '"></div>' +
+      '<div class="field span2"><label for="o-map">' + E.map + '</label><input type="url" id="o-map" data-o="map" maxlength="500" placeholder="https://maps.google.com/..." value="' + esc(od.map) + '"></div>' +
+      '<div class="field span2"><label for="o-prices">' + E.prices + '</label><textarea id="o-prices" data-o="prices" maxlength="300" rows="4">' + esc(od.prices) + '</textarea></div>' +
+      '<div class="field span2"><label for="o-note">' + E.note + '</label><textarea id="o-note" data-o="note" maxlength="150" rows="2">' + esc(od.note) + '</textarea></div>' +
+      '</div></section>' +
+      '<div class="savebar"><button type="button" class="btn btn-primary" id="saveBtn" data-act="ownersave">' + O.save + '</button>' +
+      '<button type="button" class="btn" data-act="ownerback">' + O.back + '</button><span class="msg" id="msg" aria-live="polite"></span></div></div>';
+    paintOwnerChips();
+    updateOwnerStatus();
+  }
+  async function ownerSave() {
+    var O = L.own, s = owner && shopById(owner.id);
+    if (!s) return;
+    var cand = Object.assign({}, s, od), err = validateShop(cand, 0);
+    if (err) { setMsg(err, true); return; }
+    var c = cleanShop(cand);
+    if (!c) return;
+    if (!dbNS || !uid) { setMsg(O.noDb, true); return; }
+    var btn = document.getElementById('saveBtn');
+    if (btn) btn.disabled = true;
+    setMsg(L.ed.saving, false);
+    try {
+      await saveOverride(s, owner.token, c);
+      setMsg(O.saved, false);
+      updateOwnerStatus();
+    } catch (e) {
+      var code = e && e.code;
+      setMsg(code === 'invalid_argument' || code === 'not_granted' || code === 'revoked' ? O.noRight : L.ed.fail, true);
+    }
+    if (btn) btn.disabled = false;
+  }
+
+
+  /* ---------- toast + copy ---------- */
+  var toastTimer;
+  function toast(t) {
+    var box = document.getElementById('toast');
+    document.getElementById('toastText').textContent = t;
+    box.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { box.hidden = true; }, 2200);
+  }
+  function copyNumber(btn) {
+    var v = btn.getAttribute('data-copy');
+    var fail = function () {
+      var tel = (btn.closest('.s-call,li,.tokbox') || btn.parentNode).querySelector('.tel,.tokurl');
+      if (tel) { var r = document.createRange(); r.selectNodeContents(tel); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); }
+      toast(L.selectIt);
+    };
+    try { navigator.clipboard.writeText(v).then(function () { toast(L.copied); }, fail); } catch (e) { fail(); }
+  }
+
+  /* ---------- owner editor ---------- */
+  function newId() { return 's' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5); }
+  function editRow(s, i) {
+    var E = L.ed, p = 'e' + i + '-';
+    var days = L.days.map(function (n, di) {
+      var on = (s.offDays || []).indexOf(di) > -1;
+      return '<label class="day"><input type="checkbox" data-i="' + i + '" data-f="day" data-day="' + di + '"' + (on ? ' checked' : '') + '><span>' + n + '</span></label>';
+    }).join('');
+    return '<section class="edit-shop" aria-label="' + esc(E.shop(i + 1)) + '"><div class="fields">' +
+      '<div class="field"><label for="' + p + 'name">' + E.name + '</label><input type="text" id="' + p + 'name" data-i="' + i + '" data-f="name" maxlength="80" value="' + esc(s.name) + '"></div>' +
+      '<div class="field"><label for="' + p + 'owner">' + E.owner + '</label><input type="text" id="' + p + 'owner" data-i="' + i + '" data-f="owner" maxlength="80" value="' + esc(s.owner) + '"></div>' +
+      '<div class="field"><label for="' + p + 'cat">' + E.cat + '</label><select id="' + p + 'cat" data-i="' + i + '" data-f="cat"><option value="">' + E.pickCat + '</option>' + catOptions(s.cat, null) + '</select></div>' +
+      '<div class="field"><label for="' + p + 'phone">' + E.phone + '</label><input type="tel" dir="ltr" id="' + p + 'phone" data-i="' + i + '" data-f="phone" maxlength="20" inputmode="tel" value="' + esc(s.phone) + '"></div>' +
+      '<div class="field"><label for="' + p + 'wa">' + E.wa + '</label><input type="tel" dir="ltr" id="' + p + 'wa" data-i="' + i + '" data-f="wa" maxlength="20" inputmode="tel" placeholder="0550 00 00 00" value="' + esc(s.wa) + '"></div>' +
+      '<div class="field"><label for="' + p + 'wilaya">' + E.wilaya + '</label><select id="' + p + 'wilaya" data-i="' + i + '" data-f="wilaya"><option value="">' + E.pickW + '</option>' +
+        WILAYAS.map(function (w) { return '<option value="' + esc(w) + '"' + (s.wilaya === w ? ' selected' : '') + '>' + esc(wname(w)) + '</option>'; }).join('') + '</select></div>' +
+      '<div class="field"><label for="' + p + 'daira">' + E.daira + '</label><input type="text" id="' + p + 'daira" data-i="' + i + '" data-f="daira" maxlength="60" value="' + esc(s.daira) + '"></div>' +
+      '<div class="field"><label for="' + p + 'baladiya">' + E.baladiya + '</label><input type="text" id="' + p + 'baladiya" data-i="' + i + '" data-f="baladiya" maxlength="60" value="' + esc(s.baladiya) + '"></div>' +
+      '<div class="field span2"><label for="' + p + 'address">' + E.address + '</label><input type="text" id="' + p + 'address" data-i="' + i + '" data-f="address" maxlength="160" value="' + esc(s.address) + '"></div>' +
+      '<div class="field span2"><label for="' + p + 'map">' + E.map + '</label><input type="url" id="' + p + 'map" data-i="' + i + '" data-f="map" maxlength="500" placeholder="https://maps.google.com/..." value="' + esc(s.map) + '"></div>' +
+      '<div class="field"><label for="' + p + 'open">' + E.open + '</label><input type="time" id="' + p + 'open" data-i="' + i + '" data-f="open" value="' + esc(s.open) + '"></div>' +
+      '<div class="field"><label for="' + p + 'close">' + E.close + '</label><input type="time" id="' + p + 'close" data-i="' + i + '" data-f="close" value="' + esc(s.close) + '"></div>' +
+      '<div class="field span2"><span class="legend">' + E.off + '</span><div class="days">' + days + '</div></div>' +
+      '<div class="field span2"><label class="check"><input type="checkbox" data-i="' + i + '" data-f="paused"' + (s.paused ? ' checked' : '') + '><span>' + E.paused + '</span></label></div>' +
+      '<div class="field"><label for="' + p + 'kind">' + E.kind + '</label><select id="' + p + 'kind" data-i="' + i + '" data-f="kind">' +
+        ['service', 'shop', 'product', 'goods'].map(function (k) { return '<option value="' + k + '"' + (s.kind === k ? ' selected' : '') + '>' + L.kinds[k] + '</option>'; }).join('') + '</select></div>' +
+      '<div class="field span2"><label for="' + p + 'prices">' + E.prices + '</label><textarea id="' + p + 'prices" data-i="' + i + '" data-f="prices" maxlength="300" rows="3">' + esc(s.prices) + '</textarea></div>' +
+      '<div class="field span2"><label for="' + p + 'note">' + E.note + '</label><textarea id="' + p + 'note" data-i="' + i + '" data-f="note" maxlength="150" rows="2">' + esc(s.note) + '</textarea></div>' +
+      tokBlock(s, i) +
+      '</div><div class="row-actions">' +
+      (s._c ? '<button type="button" class="btn btn-danger" data-act="delyes" data-i="' + i + '">' + E.delYes + '</button><button type="button" class="btn" data-act="delno" data-i="' + i + '">' + E.delNo + '</button>'
+            : '<button type="button" class="btn btn-danger" data-act="del" data-i="' + i + '">' + E.del + '</button>') +
+      '</div></section>';
+  }
+  /* ======================================================================
+     Site-owner editor helpers
+     ====================================================================== */
+  function validateShop(s, i) {
+    var E = L.ed, re = /^([01]\d|2[0-3]):[0-5]\d$/;
+    if (!String(s.name).trim()) return E.errName(i + 1);
+    if (String(s.phone).trim() && !safePhone(s.phone)) return E.errPhone(s.name);
+    if (String(s.wa).trim() && !safeWa(s.wa)) return E.errWa(s.name);
+    if (String(s.map).trim() && !safeMapUrl(s.map)) return E.errMap(s.name);
+    if (!re.test(s.open) || !re.test(s.close)) return E.errTime(s.name);
+    return '';
+  }
+  function tokBlock(s, i) {
+    var E = L.ed, id = 'tb-' + esc(s.id);
+    if (s._tok) {
+      var link = ownerLink(s.id, s._tok);
+      if (!link) return '<div class="field span2 tokbox" id="' + id + '"><span class="legend">' + E.tokTitle + '</span><p class="hint">' + E.baseNeed + '</p></div>';
+      return '<div class="field span2 tokbox" id="' + id + '"><span class="legend">' + E.tokTitle + '</span><p class="tokurl" dir="ltr">' + esc(link) + '</p><p class="hint">' + E.tokHint + '</p>' +
+        '<div class="row-actions"><button type="button" class="btn btn-primary" data-copy="' + esc(link) + '">' + E.tokCopy + '</button></div></div>';
+    }
+    return '<div class="field span2 tokbox" id="' + id + '"><span class="legend">' + E.tokTitle + '</span><p class="hint">' + (s.pub ? E.tokHave : E.tokNone) + '</p>' +
+      '<div class="row-actions"><button type="button" class="btn" data-act="newtok" data-i="' + i + '">' + (s.pub ? E.tokRegen : E.tokMake) + '</button></div></div>';
+  }
+  function refreshTok(s) {
+    var i = draft.indexOf(s), el = document.getElementById('tb-' + s.id);
+    if (i > -1 && el) el.outerHTML = tokBlock(s, i);
+  }
+  async function makeToken(s) {
+    if (!subtle) return;
+    try { var k = await newKeys(); s.pub = k.pub; s._tok = k.token; } catch (e) { return; }
+    refreshTok(s);
+  }
+  function addShop() {
+    var s = { id: newId(), name: '', owner: '', phone: '', address: '', wilaya: '', daira: '', baladiya: '', map: '', cat: '', wa: '', kind: 'shop', prices: '', note: '', soonMins: 0, manual: 'auto', statusAt: 0, open: '08:00', close: '20:00', offDays: [5], paused: false, pub: null, baseAt: 0 };
+    edQ = ''; edLimit = 20;
+    draft.unshift(s);
+    renderEditor(true);
+    makeToken(s);
+  }
+  function edMatches() {
+    var q = edQ.trim().toLowerCase(), out = [];
+    draft.forEach(function (s, i) {
+      if (!q || [s.name, s.owner, s.phone, s.baladiya].join(' ').toLowerCase().indexOf(q) > -1) out.push(i);
+    });
+    return out;
+  }
+  function renderEdList(focusFirst) {
+    var el = document.getElementById('edlist');
+    if (!el) return;
+    var E = L.ed, ix = edMatches();
+    el.innerHTML = (ix.length ? ix.slice(0, edLimit).map(function (i) { return editRow(draft[i], i); }).join('') : '<p class="empty">' + E.none + '</p>') +
+      (ix.length > edLimit ? '<button type="button" class="btn" data-act="edmore">' + E.more(ix.length - edLimit) + '</button>' : '');
+    if (focusFirst && ix.length) { var f = document.getElementById('e' + ix[0] + '-name'); if (f) f.focus(); }
+  }
+  function renderEditor(focusFirst) {
+    view = 'edit';
+    applyLang();
+    var E = L.ed;
+    app.innerHTML =
+      '<div class="wrap"><div class="bar"><h1>' + E.title + '</h1>' +
+      '<div class="lang on-light" role="group" aria-label="اللغة / Langue">' +
+      '<button type="button" data-lang="ar" lang="ar" aria-pressed="' + (lang === 'ar') + '">العربية</button>' +
+      '<button type="button" data-lang="fr" lang="fr" aria-pressed="' + (lang === 'fr') + '">Français</button></div></div>' +
+      '<p class="hint">' + E.hint + '</p>' +
+      '<div class="field"><label for="edbase">' + E.baseLbl + '</label><input type="url" id="edbase" dir="ltr" placeholder="https://..." value="' + esc(siteBase) + '"></div>' +
+      '<div><button type="button" class="btn" data-act="alltok">' + E.tokAll + '</button></div>' +
+      '<input class="search" id="edq" type="search" placeholder="' + esc(E.find) + '" aria-label="' + esc(E.find) + '" value="' + esc(edQ) + '">' +
+      '<div class="edlist" id="edlist"></div>' +
+      '<div><button type="button" class="btn" data-act="add">' + E.add + '</button></div>' +
+      '<div class="savebar"><button type="button" class="btn btn-primary" id="saveBtn" data-act="save">' + E.save + '</button>' +
+      '<button type="button" class="btn" data-act="cancel">' + E.cancel + '</button><span class="msg" id="msg" aria-live="polite"></span></div></div>';
+    renderEdList(focusFirst);
+  }
+  function startEdit() {
+    draft = data.shops.filter(function (s) { return embIds[s.id]; }).map(function (s) { return JSON.parse(JSON.stringify(s)); });
+    edQ = ''; edLimit = 20;
+    renderEditor(false);
+  }
+
+  /* one-time panel with the links created in the last save (they cannot be recovered later) */
+  function showNewLinks() {
+    var el = document.getElementById('newlinks');
+    if (!el || view !== 'board') return;
+    var arr = readLinks();
+    if (!arr.length) { el.innerHTML = ''; return; }
+    el.innerHTML = '<section class="notice newlinks"><strong>' + L.newLinksTitle + '</strong><p>' + L.newLinksHint + '</p><ul>' +
+      arr.slice(0, 200).map(function (x) {
+        var n = txt(x && x.n, 80), l = safeHttps(x && x.l);
+        return l ? '<li><span class="lbl">' + esc(n) + '</span><span class="tokurl" dir="ltr">' + esc(l) + '</span><div><button type="button" class="btn" data-copy="' + esc(l) + '">' + L.ed.tokCopy + '</button></div></li>' : '';
+      }).join('') + '</ul><div class="row-actions"><button type="button" class="btn btn-primary" data-act="copyall">' + L.copyAll + '</button><button type="button" class="btn" data-act="hidelinks">' + L.hideLinks + '</button></div></section>';
+  }
+
+  function setMsg(t, err) {
+    var m = document.getElementById('msg');
+    if (m) { m.textContent = t; m.className = 'msg' + (err ? ' err' : ''); }
+  }
+
+  function buildDoc(d) {
+    var json = JSON.stringify(d).replace(/</g, '\\u003c').replace(/>/g, '\\u003e').replace(/&/g, '\\u0026').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
+    return '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>' + RESET + '</style></head><body>' +
+      '<title>' + TITLE + '</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n' + FONTS + '\n' +
+      '<style id="page-css">' + cssEl.textContent + '</style>\n' +
+      '<div id="app" dir="rtl" lang="ar"></div>\n' +
+      '<div id="toast" class="toast" dir="rtl" lang="ar" hidden><span id="toastText"></span></div>\n' +
+      '<script type="application/json" id="shop-data">' + json + '<\/script>\n' +
+      '<script id="app-js">' + jsEl.textContent + '<\/script></body></html>';
+  }
+
+  /* The page is only rewritten by the site owner. Shop owners never publish the page: their changes are
+     separate signed records (see saveOverride), so two people saving at once can no longer overwrite each other. */
+  async function save() {
+    var E = L.ed;
+    for (var i = 0; i < draft.length; i++) {
+      var err = validateShop(draft[i], i);
+      if (err) { setMsg(err, true); return; }
+    }
+    var links = [];
+    var shops = draft.slice(0, MAX_SHOPS).map(function (d) {
+      var c = cleanShop(d);
+      if (!c) return null;
+      if (ovOk[c.id]) c.baseAt = Math.max(c.baseAt || 0, ovOk[c.id].at);
+      if (d._tok && c.pub) { var l = ownerLink(c.id, d._tok); if (l) links.push({ n: c.name, l: l }); }
+      return c;
+    }).filter(Boolean);
+    var out = { demo: false, base: siteBase, shops: shops };
+    var btn = document.getElementById('saveBtn');
+    btn.disabled = true;
+    setMsg(E.saving, false);
+    var doc = buildDoc(out);
+    if (doc.length > 15000000) { btn.disabled = false; setMsg(E.tooBig(shops.length), true); return; }
+    try { sessionStorage.setItem('mq-links', JSON.stringify({ t: Date.now(), l: links })); } catch (e) { /* no storage */ }
+    try {
+      await artifactNS.publish(doc);
+      setMsg(E.saved, false);
+    } catch (err2) {
+      try { sessionStorage.removeItem('mq-links'); } catch (e) { /* no storage */ }
+      btn.disabled = false;
+      var code = err2 && err2.code;
+      if (code === 'conflict') setMsg(E.conflict, true);
+      else if (code === 'not_writer' || code === 'not_granted' || code === 'not_declared' || code === 'consent_required') setMsg(E.noRight, true);
+      else if (code === 'rate_limited') setMsg(E.rate, true);
+      else setMsg(E.fail, true);
+    }
+  }
+
+  /* ---------- floating contact button ---------- */
+  var WA_SUPPORT = '213660151911';
+  function paintFab() {
+    var a = document.getElementById('fab');
+    if (!a) {
+      a = document.createElement('a');
+      a.id = 'fab'; a.className = 'fab'; a.target = '_blank'; a.rel = 'noopener noreferrer';
+      a.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg><span class="fab-t"></span><span class="fab-n">0660151911</span>';
+      document.body.appendChild(a);
+    }
+    a.href = 'https://wa.me/' + WA_SUPPORT + '?text=' + encodeURIComponent(L.fabMsg);
+    a.setAttribute('aria-label', L.fabAria);
+    a.querySelector('.fab-t').textContent = L.fab + ' ·';
+  }
+
+  /* ======================================================================
+     Self-service registration: the shop owner fills the form, a fresh ECDSA key pair is generated,
+     the shop (with its PUBLIC key) is added to data.shops and, when the database is available, saved
+     in the shared collection "reg" (one document per signed-in visitor, so nobody can overwrite another).
+     The private token appears only in the secret edit link shown once to the owner.
+     ====================================================================== */
+  var REG_MAX = 20;
+  var regOpen = false, regBusy = false, regDone = null, regDb = [], regLocal = [], regUnsub = null;
+  function newRg() { return { name: '', owner: '', phone: '', wa: '', wilaya: '', daira: '', baladiya: '', cat: '', kind: 'shop', open: '08:00', close: '20:00', address: '', offDays: [5] }; }
+  var rg = newRg();
+
+  function regHtml() {
+    var R = L.reg, E = L.ed;
+    var days = L.days.map(function (n, di) {
+      return '<label class="day"><input type="checkbox" data-r="day" data-day="' + di + '"' + (rg.offDays.indexOf(di) > -1 ? ' checked' : '') + '><span>' + n + '</span></label>';
+    }).join('');
+    var tx = function (f, label, type, extra) {
+      return '<div class="field"><label for="rg-' + f + '">' + label + '</label><input type="' + type + '" id="rg-' + f + '" data-r="' + f + '" ' + (extra || '') + ' value="' + esc(rg[f]) + '"></div>';
+    };
+    return '<section class="reg" aria-labelledby="reg-h"><div class="reg-in">' +
+      '<div class="reg-head"><span class="reg-ic" aria-hidden="true">+</span><div class="reg-t"><h2 id="reg-h">' + esc(R.title) + '</h2><p>' + esc(R.sub) + '</p></div>' +
+      '<button type="button" class="reg-cta" id="regcta" data-act="regtoggle" aria-expanded="' + regOpen + '" aria-controls="regform">' + esc(regOpen ? R.ctaHide : R.cta) + '</button></div>' +
+      '<ul class="reg-perks">' + R.perks.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>' +
+      '<div class="reg-form" id="regform"' + (regOpen ? '' : ' hidden') + '>' +
+      '<div class="fields">' +
+      tx('name', E.name + ' *', 'text', 'maxlength="80" autocomplete="organization"') + tx('owner', E.owner, 'text', 'maxlength="80" autocomplete="name"') +
+      tx('phone', E.phone, 'tel', 'dir="ltr" maxlength="20" inputmode="tel"') + tx('wa', E.wa, 'tel', 'dir="ltr" maxlength="20" inputmode="tel" placeholder="0550 00 00 00"') +
+      '<div class="field"><label for="rg-wilaya">' + E.wilaya + ' *</label><select id="rg-wilaya" data-r="wilaya"><option value="">' + E.pickW + '</option>' +
+        WILAYAS.map(function (w) { return '<option value="' + esc(w) + '"' + (rg.wilaya === w ? ' selected' : '') + '>' + esc(wname(w)) + '</option>'; }).join('') + '</select></div>' +
+      tx('daira', E.daira, 'text', 'maxlength="60"') + tx('baladiya', E.baladiya, 'text', 'maxlength="60"') +
+      '<div class="field"><label for="rg-cat">' + E.cat + ' *</label><select id="rg-cat" data-r="cat"><option value="">' + E.pickCat + '</option>' + catOptions(rg.cat, null) + '</select></div>' +
+      '<div class="field"><label for="rg-kind">' + E.kind + '</label><select id="rg-kind" data-r="kind">' +
+        ['service', 'shop', 'product', 'goods'].map(function (k) { return '<option value="' + k + '"' + (rg.kind === k ? ' selected' : '') + '>' + L.kinds[k] + '</option>'; }).join('') + '</select></div>' +
+      tx('open', E.open, 'time') + tx('close', E.close, 'time') +
+      '<div class="field span2"><label for="rg-address">' + E.address + '</label><input type="text" id="rg-address" data-r="address" maxlength="160" value="' + esc(rg.address) + '"></div>' +
+      '<div class="field span2"><span class="legend">' + E.off + '</span><div class="days">' + days + '</div></div>' +
+      '</div><p class="hint">' + esc(R.required) + '</p>' +
+      '<div class="savebar" style="position:static;padding:0"><button type="button" class="btn btn-primary reg-submit" id="regbtn" data-act="regsubmit">' + esc(R.submit) + '</button><span class="msg" id="rgmsg" role="status" aria-live="polite"></span></div>' +
+      '</div></div></section>';
+  }
+  function regInput(t) {
+    var f = t.getAttribute('data-r');
+    if (f === 'day') {
+      var d = parseInt(t.getAttribute('data-day'), 10), a = rg.offDays, at = a.indexOf(d);
+      if (t.checked && at < 0) a.push(d);
+      if (!t.checked && at > -1) a.splice(at, 1);
+    } else if (f !== 'offDays' && Object.prototype.hasOwnProperty.call(rg, f)) rg[f] = t.value;
+  }
+  function regToggle() {
+    regOpen = !regOpen;
+    var f = document.getElementById('regform'), b = document.getElementById('regcta');
+    if (f) f.hidden = !regOpen;
+    if (b) { b.setAttribute('aria-expanded', String(regOpen)); b.textContent = regOpen ? L.reg.ctaHide : L.reg.cta; }
+    if (regOpen) { var i = document.getElementById('rg-name'); if (i) i.focus(); }
+  }
+  function regMsg(t, err) {
+    var m = document.getElementById('rgmsg');
+    if (m) { m.textContent = t; m.className = 'msg' + (err ? ' err' : ''); }
+    return false;
+  }
+  function applyReg() {
+    var seen = dict(), out = [];
+    regDb.concat(regLocal).forEach(function (s) { if (!seen[s.id] && !embIds[s.id]) { seen[s.id] = 1; out.push(s); } });
+    return setReg(out.slice(0, MAX_SHOPS));
+  }
+  function watchRegs() {
+    if (!dbNS || regUnsub) return;
+    try {
+      regUnsub = dbNS.collection('reg').onSnapshot(function (snap) {
+        var rows = [];
+        snap.docs.forEach(function (d) {
+          var b = d.data(), it = b && b.items;
+          if (!it || typeof it !== 'object') return;
+          Object.keys(it).slice(0, REG_MAX).forEach(function (id) {
+            var raw = it[id];
+            if (!validId(id) || !raw || typeof raw !== 'object') return;
+            raw.id = id;
+            var s = cleanShop(raw);
+            if (s && s.pub && s.id === id && !embIds[id]) { s.manual = 'auto'; s.soonMins = 0; s.statusAt = 0; s.baseAt = 0; rows.push(s); }
+          });
+        });
+        regDb = rows.slice(0, MAX_SHOPS);
+        applyReg().then(function () { if (view === 'board') updateBoard(); });
+      }, function () { /* read-only */ });
+    } catch (e) { /* no database */ }
+  }
+  async function registerShop() {
+    if (regBusy) return;
+    var R = L.reg;
+    if (!txt(rg.name, 80)) return regMsg(R.errName, true);
+    if (!safePhone(rg.phone) && !safeWa(rg.wa)) return regMsg(R.errContact, true);
+    if (WILAYAS.indexOf(rg.wilaya) < 0) return regMsg(R.errWil, true);
+    if (!Object.prototype.hasOwnProperty.call(CATMAP, rg.cat)) return regMsg(R.errCat, true);
+    var cand = {
+      id: 'r' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8), name: rg.name, owner: rg.owner, phone: rg.phone, wa: rg.wa,
+      wilaya: rg.wilaya, daira: rg.daira, baladiya: rg.baladiya, address: rg.address, map: '', cat: rg.cat, kind: rg.kind,
+      prices: '', note: '', manual: 'auto', soonMins: 0, statusAt: 0, open: rg.open, close: rg.close, offDays: rg.offDays.slice(), paused: false, pub: null, baseAt: 0
+    };
+    var err = validateShop(cand, 0);
+    if (err) return regMsg(err, true);
+    if (!subtle) return regMsg(R.noCrypto, true);
+    regBusy = true;
+    var btn = document.getElementById('regbtn');
+    if (btn) btn.disabled = true;
+    regMsg(R.working, false);
+    var keys, c;
+    try { keys = await newKeys(); cand.pub = keys.pub; c = cleanShop(cand); } catch (e) { c = null; }
+    if (!c || !c.pub) { regBusy = false; if (btn) btn.disabled = false; return regMsg(L.ed.fail, true); }
+    var saved = false;
+    if (dbNS && uid) {
+      try {
+        var ref = dbNS.doc('reg/' + uid), cur = await ref.get();
+        var items = (cur.exists && cur.data() && cur.data().items) || {};
+        if (Object.keys(items).length >= REG_MAX) { regBusy = false; if (btn) btn.disabled = false; return regMsg(R.full, true); }
+        items[c.id] = c;
+        await ref.set({ items: items });
+        saved = true;
+      } catch (e) { saved = false; }
+    }
+    if (saved) regDb = regDb.concat([c]); else regLocal = regLocal.concat([c]);
+    await applyReg();
+    var link = ownerLink(c.id, keys.token) || ('edit.' + c.id + '.' + keys.token);
+    regDone = { id: c.id, token: keys.token, name: c.name, link: link, local: !saved };
+    rg = newRg(); regOpen = false; regBusy = false;
+    filter = 'all'; query = ''; wfilter = ''; cfilter = ''; kfilter = '';
+    renderBoardShell();
+    paintRegModal();
+  }
+  function paintRegModal() {
+    var m = document.getElementById('regmodal');
+    if (!regDone) { if (m) m.remove(); return; }
+    var R = L.reg;
+    if (!m) {
+      m = document.createElement('div');
+      m.id = 'regmodal'; m.className = 'rgmodal';
+      m.addEventListener('click', function (e) {
+        var t = e.target.closest('button');
+        if (!t) return;
+        if (t.hasAttribute('data-copy')) { copyNumber(t); return; }
+        var a = t.getAttribute('data-act');
+        if (a === 'regclose') { regDone = null; paintRegModal(); }
+        else if (a === 'regedit') {
+          var d = regDone; regDone = null; paintRegModal();
+          startOwner(d.id, d.token);
+        }
+      });
+      document.body.appendChild(m);
+    }
+    m.setAttribute('dir', L.dir); m.setAttribute('lang', L.code);
+    m.innerHTML = '<div class="rgbox" role="dialog" aria-modal="true" aria-labelledby="rgt">' +
+      '<h2 id="rgt">✓ ' + esc(R.doneTitle) + '</h2><p class="l1">' + esc(regDone.name) + '</p>' +
+      '<div class="tokbox"><span class="legend">' + esc(R.linkLbl) + '</span><p class="tokurl" dir="ltr">' + esc(regDone.link) + '</p>' +
+      '<div class="row-actions" style="padding-top:10px"><button type="button" class="btn btn-primary" data-copy="' + esc(regDone.link) + '">' + esc(R.copy) + '</button></div></div>' +
+      '<p class="notice">' + esc(R.warn) + '</p>' +
+      '<p class="hint">' + esc(regDone.local ? R.local : R.shared) + '</p>' +
+      '<div class="row-actions"><button type="button" class="btn" data-act="regedit">' + esc(R.edit) + '</button><button type="button" class="btn btn-primary" data-act="regclose" id="rgclose">' + esc(R.close) + '</button></div></div>';
+    var cb = document.getElementById('rgclose');
+    if (cb && !m.getAttribute('data-f')) { m.setAttribute('data-f', '1'); cb.focus(); }
+  }
+
+  /* ---------- events ---------- */
+  function rerender() {
+    if (view === 'edit') renderEditor(false);
+    else if (view === 'owner') renderOwner(true);
+    else renderBoardShell();
+    paintFab();
+    paintRegModal();
+  }
+  async function ownerStatus(v, mins) {
+    if (['auto', 'open', 'soon', 'break', 'closed'].indexOf(v) < 0) return;
+    if (v === 'soon' && [60, 120, 180].indexOf(mins) < 0) return;
+    od.manual = v;
+    od.soonMins = v === 'soon' ? mins : 0;
+    od.statusAt = v === 'auto' ? 0 : Date.now();
+    paintOwnerChips();
+    updateOwnerStatus();
+    await ownerSave();
+  }
+  async function allTokens() {
+    var n = 0;
+    for (var i = 0; i < draft.length; i++) {
+      if (draft[i].pub) continue;
+      try { var k = await newKeys(); draft[i].pub = k.pub; draft[i]._tok = k.token; n++; } catch (e) { break; }
+    }
+    renderEdList();
+    toast(L.ed.tokAllDone(n));
+  }
+  function copyAllLinks() {
+    var arr = readLinks();
+    var text = arr.map(function (x) { return txt(x && x.n, 80) + '\t' + safeHttps(x && x.l); }).join('\n');
+    var fail = function () { toast(L.selectIt); };
+    try { navigator.clipboard.writeText(text).then(function () { toast(L.copiedAll); }, fail); } catch (e) { fail(); }
+  }
+
+  app.addEventListener('click', function (e) {
+    var r = e.target.closest('button[data-rate]');
+    if (r) {
+      var rid = r.getAttribute('data-rate-id'), rv = parseInt(r.getAttribute('data-rate'), 10);
+      if (rates[rid] === rv) delete rates[rid]; else rates[rid] = rv;
+      store('mq-rates', JSON.stringify(rates));
+      updateBoard();
+      return;
+    }
+    var t = e.target.closest('button');
+    if (!t) return;
+    if (t.hasAttribute('data-lang')) {
+      var nl = t.getAttribute('data-lang');
+      if (nl !== lang && LANGS[nl]) {
+        lang = nl;
+        store('mq-lang', lang);
+        rerender();
+      }
+      return;
+    }
+    if (t.hasAttribute('data-copy')) { copyNumber(t); return; }
+    if (t.hasAttribute('data-ostat')) { ownerStatus(t.getAttribute('data-ostat'), parseInt(t.getAttribute('data-mins'), 10) || 0); return; }
+    if (t.hasAttribute('data-kind')) { var kk = t.getAttribute('data-kind'); kfilter = kfilter === kk ? '' : kk; shown = PAGE; updateBoard(); return; }
+    if (t.hasAttribute('data-filter')) { filter = t.getAttribute('data-filter'); shown = PAGE; updateBoard(); return; }
+    var act = t.getAttribute('data-act');
+    if (!act) return;
+    var i = parseInt(t.getAttribute('data-i'), 10);
+    if (act === 'regtoggle') regToggle();
+    else if (act === 'regsubmit') registerShop();
+    else if (act === 'edit') startEdit();
+    else if (act === 'cancel') renderBoardShell();
+    else if (act === 'more') { shown += PAGE; updateBoard(); }
+    else if (act === 'edmore') { edLimit += 20; renderEdList(); }
+    else if (act === 'add') addShop();
+    else if (act === 'alltok') allTokens();
+    else if (act === 'newtok') { if (draft[i]) makeToken(draft[i]); }
+    else if (act === 'del') { if (draft[i]) { draft[i]._c = true; renderEdList(); } }
+    else if (act === 'delno') { if (draft[i]) { draft[i]._c = false; renderEdList(); } }
+    else if (act === 'delyes') { draft.splice(i, 1); renderEdList(); }
+    else if (act === 'save') save();
+    else if (act === 'ownersave') ownerSave();
+    else if (act === 'ownerback') { owner = null; od = {}; renderBoardShell(); }
+    else if (act === 'hidelinks') { try { sessionStorage.removeItem('mq-links'); } catch (x) { /* no storage */ } showNewLinks(); }
+    else if (act === 'copyall') copyAllLinks();
+    else if (act === 'ownergo') {
+      var inp = document.getElementById('ownin'), p = parseOwnerLink(inp && inp.value);
+      if (!p) { ownerMsg(L.ownerBad); return; }
+      startOwner(p.id, p.token).then(function (ok) { if (!ok) ownerMsg(L.ownerBad); });
+    }
+  });
+  app.addEventListener('input', function (e) {
+    var t = e.target;
+    if (t.hasAttribute('data-r')) { regInput(t); return; }
+    if (t.id === 'q') { query = t.value; shown = PAGE; clearTimeout(qTimer); qTimer = setTimeout(updateBoard, data.shops.length > 3000 ? 160 : 0); return; }
+    if (t.id === 'wsel') {
+      wfilter = t.value; shown = PAGE;
+      store('mq-w', wfilter);
+      if (SHARD.on) selectWilaya(wfilter); else updateBoard();
+      return;
+    }
+    if (t.id === 'csel') { cfilter = t.value; shown = PAGE; updateBoard(); return; }
+    if (t.hasAttribute('data-bkf')) { var bk = t.closest('.bk'); if (bk) updateBook(bk); return; }
+    if (view === 'owner') {
+      var of = t.getAttribute('data-o');
+      if (!of) return;
+      if (of === 'day') {
+        var od1 = parseInt(t.getAttribute('data-day'), 10), a1 = od.offDays, at1 = a1.indexOf(od1);
+        if (t.checked && at1 < 0) a1.push(od1);
+        if (!t.checked && at1 > -1) a1.splice(at1, 1);
+      } else if (of === 'paused') od.paused = t.checked;
+      else od[of] = t.value;
+      updateOwnerStatus();
+      return;
+    }
+    if (view !== 'edit') return;
+    if (t.id === 'edq') { edQ = t.value; edLimit = 20; clearTimeout(qTimer); qTimer = setTimeout(function () { renderEdList(); }, 150); return; }
+    if (t.id === 'edbase') { siteBase = safeHttps(t.value); clearTimeout(qTimer); qTimer = setTimeout(function () { renderEdList(); }, 300); return; }
+    var i = parseInt(t.getAttribute('data-i'), 10), f = t.getAttribute('data-f');
+    if (isNaN(i) || !f || !draft[i]) return;
+    if (f === 'day') {
+      var d = parseInt(t.getAttribute('data-day'), 10), arr = draft[i].offDays, at = arr.indexOf(d);
+      if (t.checked && at < 0) arr.push(d);
+      if (!t.checked && at > -1) arr.splice(at, 1);
+    } else if (f === 'paused') draft[i][f] = t.checked;
+    else draft[i][f] = t.value;
+  });
+
+  renderBoardShell();
+  setInterval(function () {
+    var l = document.getElementById('list');
+    if (view === 'board' && l && l.querySelector('details[open]')) { renderClock(algiersNow()); return; }
+    updateBoard();
+  }, 20000);
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) updateBoard(); });
+
+  (async function () {
+    try {
+      if (window.claude && window.claude.use) {
+        var caps = await Promise.all([window.claude.use('artifact'), window.claude.use('user'), window.claude.use('db')]);
+        artifactNS = caps[0]; dbNS = caps[2];
+        if (caps[1] && caps[1].id) { try { uid = await caps[1].id(); } catch (e) { uid = null; } }
+        if (artifactNS && caps[1] && cssEl && jsEl) canEdit = await caps[1].canEdit();
+        watchOverrides();
+        watchRegs();
+      }
+    } catch (e) { /* page works read-only */ }
+    if (canEdit) { showManage(); }
+    await loadIndex();
+    if (SHARD.on) {
+      var sw = '';
+      try { sw = localStorage.getItem('mq-w') || ''; } catch (e) { /* no storage */ }
+      if (sw && SHARD.idx.w[String(WILAYAS.indexOf(sw) + 1)]) { wfilter = sw; selectWilaya(sw); }
+    }
+    updateBoard();
+    await openFromUrl();
+  })();
+})();
+</script>
+</body></html>
